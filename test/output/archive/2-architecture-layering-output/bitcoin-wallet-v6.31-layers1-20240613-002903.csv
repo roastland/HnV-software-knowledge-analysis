@@ -1,0 +1,913 @@
+package,class,method,layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.armBackupReminder(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,"de.schildbach.wallet.Configuration.changeLogVersionCodeCrossed(int,int)",Service Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,"de.schildbach.wallet.Configuration.de.schildbach.wallet.Configuration(android.content.SharedPreferences,android.content.res.Resources)",Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.disarmBackupReminder(),Service Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getBestChainHeightEver(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getBlockExplorer(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getBtcBase(),Domain Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getBtcShift(),Domain Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getCachedExchangeRate(),Domain Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getConnectivityNotificationEnabled(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getDisclaimerEnabled(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getExchangeCurrencyCode(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getFormat(),Domain Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getLastBackupTime(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getLastExchangeDirection(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getLastUsedAgo(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getMaxPrecisionFormat(),Domain Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getOwnName(),Domain Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getSendCoinsAutoclose(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getTrustedPeerHost(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.getTrustedPeerOnly(),Domain Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.hasBeenUsed(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.maybeIncrementBestChainHeightEver(int),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.registerOnSharedPreferenceChangeListener(android.content.SharedPreferences.OnSharedPreferenceChangeListener),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.remindBackup(),Service Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.remindBalance(),Cross-Cutting
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.setCachedExchangeRate(de.schildbach.wallet.data.ExchangeRate),Service Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.setExchangeCurrencyCode(java.lang.String),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.setLastExchangeDirection(boolean),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.setRemindBalance(boolean),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.touchLastUsed(),Service Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.unregisterOnSharedPreferenceChangeListener(android.content.SharedPreferences.OnSharedPreferenceChangeListener),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.updateLastBluetoothAddress(java.lang.String),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,de.schildbach.wallet.Configuration.updateLastVersionCode(int),Service Layer
+de.schildbach.wallet,de.schildbach.wallet.Configuration,"de.schildbach.wallet.Configuration.versionCodeCrossed(int,int)",Cross-Cutting
+de.schildbach.wallet,de.schildbach.wallet.Constants,de.schildbach.wallet.Constants.de.schildbach.wallet.Constants(),Cross-Cutting
+de.schildbach.wallet,de.schildbach.wallet.Constants$Files,de.schildbach.wallet.Constants$Files.de.schildbach.wallet.Constants$Files(),Domain Layer
+de.schildbach.wallet,de.schildbach.wallet.Logging,de.schildbach.wallet.Logging.de.schildbach.wallet.Logging(),Cross-Cutting
+de.schildbach.wallet,de.schildbach.wallet.Logging,de.schildbach.wallet.Logging.init(java.io.File),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.applicationPackageFlavor(),Cross-Cutting
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.autosaveWalletNow(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.de.schildbach.wallet.WalletApplication(),Cross-Cutting
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.getConfiguration(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.getWallet(),Service Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.getWalletAsync(de.schildbach.wallet.WalletApplication$OnWalletLoadedListener),Service Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.httpUserAgent(),Cross-Cutting
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.httpUserAgent(java.lang.String),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.maxConnectedPeers(),Cross-Cutting
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.onCreate(),Service Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.packageInfo(),Data Source Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.processDirectTransaction(org.bitcoinj.core.Transaction),Service Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.replaceWallet(org.bitcoinj.wallet.Wallet),Service Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.scryptIterationsTarget(),Cross-Cutting
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,de.schildbach.wallet.WalletApplication.versionLine(android.content.pm.PackageInfo),Cross-Cutting
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication$OnWalletLoadedListener,de.schildbach.wallet.WalletApplication$OnWalletLoadedListener.onWalletLoaded(org.bitcoinj.wallet.Wallet),Domain Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletBalanceWidgetProvider,de.schildbach.wallet.WalletBalanceWidgetProvider.de.schildbach.wallet.WalletBalanceWidgetProvider(),Service Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletBalanceWidgetProvider,"de.schildbach.wallet.WalletBalanceWidgetProvider.onAppWidgetOptionsChanged(android.content.Context,android.appwidget.AppWidgetManager,int,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletBalanceWidgetProvider,"de.schildbach.wallet.WalletBalanceWidgetProvider.onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])",Presentation Layer
+de.schildbach.wallet,de.schildbach.wallet.WalletBalanceWidgetProvider,"de.schildbach.wallet.WalletBalanceWidgetProvider.updateWidgets(android.content.Context,org.bitcoinj.core.Coin,de.schildbach.wallet.data.ExchangeRate)",Presentation Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AbstractWalletLiveData,de.schildbach.wallet.data.AbstractWalletLiveData.de.schildbach.wallet.data.AbstractWalletLiveData(de.schildbach.wallet.WalletApplication),Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AbstractWalletLiveData,"de.schildbach.wallet.data.AbstractWalletLiveData.de.schildbach.wallet.data.AbstractWalletLiveData(de.schildbach.wallet.WalletApplication,long)",Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookDao,de.schildbach.wallet.data.AddressBookDao.delete(java.lang.String),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookDao,de.schildbach.wallet.data.AddressBookDao.get(java.lang.String),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookDao,de.schildbach.wallet.data.AddressBookDao.getAll(),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookDao,de.schildbach.wallet.data.AddressBookDao.getAllExcept(java.util.Set),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookDao,de.schildbach.wallet.data.AddressBookDao.insertOrUpdate(de.schildbach.wallet.data.AddressBookEntry),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookDao,de.schildbach.wallet.data.AddressBookDao.resolveLabel(java.lang.String),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookEntry,de.schildbach.wallet.data.AddressBookEntry.asMap(java.util.List),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookEntry,"de.schildbach.wallet.data.AddressBookEntry.de.schildbach.wallet.data.AddressBookEntry(java.lang.String,java.lang.String)",Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookEntry,de.schildbach.wallet.data.AddressBookEntry.getAddress(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookEntry,de.schildbach.wallet.data.AddressBookEntry.getLabel(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AppDatabase,de.schildbach.wallet.data.AppDatabase.addressBookDao(),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AppDatabase,de.schildbach.wallet.data.AppDatabase.de.schildbach.wallet.data.AppDatabase(),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.AppDatabase,de.schildbach.wallet.data.AppDatabase.getDatabase(android.content.Context),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.BlockchainStateLiveData,de.schildbach.wallet.data.BlockchainStateLiveData.de.schildbach.wallet.data.BlockchainStateLiveData(de.schildbach.wallet.WalletApplication),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.BlockchainStateLiveData,"de.schildbach.wallet.data.BlockchainStateLiveData.onServiceConnected(android.content.ComponentName,android.os.IBinder)",Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.BlockchainStateLiveData,de.schildbach.wallet.data.BlockchainStateLiveData.onServiceDisconnected(android.content.ComponentName),Cross-Cutting
+de.schildbach.wallet.data,de.schildbach.wallet.data.ConfigFormatLiveData,de.schildbach.wallet.data.ConfigFormatLiveData.de.schildbach.wallet.data.ConfigFormatLiveData(de.schildbach.wallet.WalletApplication),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ConfigFormatLiveData,"de.schildbach.wallet.data.ConfigFormatLiveData.onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)",Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ConfigOwnNameLiveData,de.schildbach.wallet.data.ConfigOwnNameLiveData.de.schildbach.wallet.data.ConfigOwnNameLiveData(de.schildbach.wallet.WalletApplication),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ConfigOwnNameLiveData,"de.schildbach.wallet.data.ConfigOwnNameLiveData.onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)",Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.DynamicFeeLiveData,de.schildbach.wallet.data.DynamicFeeLiveData.de.schildbach.wallet.data.DynamicFeeLiveData(de.schildbach.wallet.WalletApplication),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRate,"de.schildbach.wallet.data.ExchangeRate.de.schildbach.wallet.data.ExchangeRate(org.bitcoinj.utils.ExchangeRate,java.lang.String)",Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRate,de.schildbach.wallet.data.ExchangeRate.getCurrencyCode(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRate,de.schildbach.wallet.data.ExchangeRate.toString(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRatesProvider,"de.schildbach.wallet.data.ExchangeRatesProvider.contentUri(java.lang.String,boolean)",Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRatesProvider,de.schildbach.wallet.data.ExchangeRatesProvider.de.schildbach.wallet.data.ExchangeRatesProvider(),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRatesProvider,"de.schildbach.wallet.data.ExchangeRatesProvider.delete(android.net.Uri,java.lang.String,java.lang.String[])",Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRatesProvider,de.schildbach.wallet.data.ExchangeRatesProvider.getExchangeRate(android.database.Cursor),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRatesProvider,de.schildbach.wallet.data.ExchangeRatesProvider.getType(android.net.Uri),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRatesProvider,"de.schildbach.wallet.data.ExchangeRatesProvider.insert(android.net.Uri,android.content.ContentValues)",Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRatesProvider,de.schildbach.wallet.data.ExchangeRatesProvider.onCreate(),Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRatesProvider,"de.schildbach.wallet.data.ExchangeRatesProvider.query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)",Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRatesProvider,"de.schildbach.wallet.data.ExchangeRatesProvider.update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])",Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.blank(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,"de.schildbach.wallet.data.PaymentIntent.de.schildbach.wallet.data.PaymentIntent(de.schildbach.wallet.data.PaymentIntent$Standard,java.lang.String,java.lang.String,de.schildbach.wallet.data.PaymentIntent$Output[],java.lang.String,java.lang.String,byte[],java.lang.String,byte[])",Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.describeContents(),Cross-Cutting
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.equalsAddress(de.schildbach.wallet.data.PaymentIntent),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.equalsAmount(de.schildbach.wallet.data.PaymentIntent),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,"de.schildbach.wallet.data.PaymentIntent.from(java.lang.String,java.lang.String,org.bitcoinj.core.Coin)",Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,"de.schildbach.wallet.data.PaymentIntent.fromAddress(java.lang.String,java.lang.String)",Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,"de.schildbach.wallet.data.PaymentIntent.fromAddress(org.bitcoinj.core.Address,java.lang.String)",Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.fromBitcoinUri(org.bitcoinj.uri.BitcoinURI),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.getAddress(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.getAmount(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.hasAddress(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.hasAmount(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.hasOutputs(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.hasPayee(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.hasPaymentRequestUrl(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.hasPaymentUrl(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.isBluetoothPaymentRequestUrl(),Cross-Cutting
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.isBluetoothPaymentUrl(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.isExtendedBy(de.schildbach.wallet.data.PaymentIntent),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.isHttpPaymentRequestUrl(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.isHttpPaymentUrl(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.isSupportedPaymentRequestUrl(),Cross-Cutting
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.isSupportedPaymentUrl(),Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.mayEditAddress(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.mayEditAmount(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,"de.schildbach.wallet.data.PaymentIntent.mergeWithEditedValues(org.bitcoinj.core.Coin,org.bitcoinj.core.Address)",Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.toSendRequest(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.data.PaymentIntent.toString(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,"de.schildbach.wallet.data.PaymentIntent.writeToParcel(android.os.Parcel,int)",Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent$Output,"de.schildbach.wallet.data.PaymentIntent$Output.de.schildbach.wallet.data.PaymentIntent$Output(org.bitcoinj.core.Coin,org.bitcoinj.script.Script)",Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent$Output,de.schildbach.wallet.data.PaymentIntent$Output.describeContents(),Cross-Cutting
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent$Output,de.schildbach.wallet.data.PaymentIntent$Output.hasAmount(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent$Output,de.schildbach.wallet.data.PaymentIntent$Output.toString(),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent$Output,de.schildbach.wallet.data.PaymentIntent$Output.valueOf(org.bitcoinj.protocols.payments.PaymentProtocol$Output),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent$Output,"de.schildbach.wallet.data.PaymentIntent$Output.writeToParcel(android.os.Parcel,int)",Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.SelectedExchangeRateLiveData,de.schildbach.wallet.data.SelectedExchangeRateLiveData.de.schildbach.wallet.data.SelectedExchangeRateLiveData(de.schildbach.wallet.WalletApplication),Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.SelectedExchangeRateLiveData,"de.schildbach.wallet.data.SelectedExchangeRateLiveData.onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)",Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.SingleLiveEvent,de.schildbach.wallet.data.SingleLiveEvent.call(),Cross-Cutting
+de.schildbach.wallet.data,de.schildbach.wallet.data.SingleLiveEvent,de.schildbach.wallet.data.SingleLiveEvent.de.schildbach.wallet.data.SingleLiveEvent(),Cross-Cutting
+de.schildbach.wallet.data,de.schildbach.wallet.data.SingleLiveEvent,"de.schildbach.wallet.data.SingleLiveEvent.observe(android.arch.lifecycle.LifecycleOwner,android.arch.lifecycle.Observer)",Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.SingleLiveEvent,de.schildbach.wallet.data.SingleLiveEvent.postCall(),Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.SingleLiveEvent,de.schildbach.wallet.data.SingleLiveEvent.setValue(java.lang.Object),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.ThrottelingLiveData,de.schildbach.wallet.data.ThrottelingLiveData.de.schildbach.wallet.data.ThrottelingLiveData(),Cross-Cutting
+de.schildbach.wallet.data,de.schildbach.wallet.data.ThrottelingLiveData,de.schildbach.wallet.data.ThrottelingLiveData.de.schildbach.wallet.data.ThrottelingLiveData(long),Cross-Cutting
+de.schildbach.wallet.data,de.schildbach.wallet.data.TimeLiveData,de.schildbach.wallet.data.TimeLiveData.de.schildbach.wallet.data.TimeLiveData(de.schildbach.wallet.WalletApplication),Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletBalanceLiveData,de.schildbach.wallet.data.WalletBalanceLiveData.de.schildbach.wallet.data.WalletBalanceLiveData(de.schildbach.wallet.WalletApplication),Domain Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletBalanceLiveData,"de.schildbach.wallet.data.WalletBalanceLiveData.de.schildbach.wallet.data.WalletBalanceLiveData(de.schildbach.wallet.WalletApplication,org.bitcoinj.wallet.Wallet.BalanceType)",Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletBalanceLiveData,"de.schildbach.wallet.data.WalletBalanceLiveData.onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)",Data Source Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletBalanceLiveData$WalletListener,"de.schildbach.wallet.data.WalletBalanceLiveData$WalletListener.onCoinsReceived(org.bitcoinj.wallet.Wallet,org.bitcoinj.core.Transaction,org.bitcoinj.core.Coin,org.bitcoinj.core.Coin)",Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletBalanceLiveData$WalletListener,"de.schildbach.wallet.data.WalletBalanceLiveData$WalletListener.onCoinsSent(org.bitcoinj.wallet.Wallet,org.bitcoinj.core.Transaction,org.bitcoinj.core.Coin,org.bitcoinj.core.Coin)",Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletBalanceLiveData$WalletListener,de.schildbach.wallet.data.WalletBalanceLiveData$WalletListener.onReorganize(org.bitcoinj.wallet.Wallet),Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletBalanceLiveData$WalletListener,de.schildbach.wallet.data.WalletBalanceLiveData$WalletListener.onWalletChanged(org.bitcoinj.wallet.Wallet),Service Layer
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletLiveData,de.schildbach.wallet.data.WalletLiveData.de.schildbach.wallet.data.WalletLiveData(de.schildbach.wallet.WalletApplication),Cross-Cutting
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,de.schildbach.wallet.integration.android.BitcoinIntegration.de.schildbach.wallet.integration.android.BitcoinIntegration(),Cross-Cutting
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,de.schildbach.wallet.integration.android.BitcoinIntegration.paymentFromResult(android.content.Intent),Domain Layer
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,de.schildbach.wallet.integration.android.BitcoinIntegration.paymentRequestFromIntent(android.content.Intent),Data Source Layer
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,"de.schildbach.wallet.integration.android.BitcoinIntegration.paymentToResult(android.content.Intent,byte[])",Data Source Layer
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,"de.schildbach.wallet.integration.android.BitcoinIntegration.request(android.content.Context,byte[])",Service Layer
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,"de.schildbach.wallet.integration.android.BitcoinIntegration.request(android.content.Context,java.lang.String)",Service Layer
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,"de.schildbach.wallet.integration.android.BitcoinIntegration.request(android.content.Context,java.lang.String,long)",Service Layer
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,"de.schildbach.wallet.integration.android.BitcoinIntegration.requestForResult(android.app.Activity,int,byte[])",Service Layer
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,"de.schildbach.wallet.integration.android.BitcoinIntegration.requestForResult(android.app.Activity,int,java.lang.String)",Presentation Layer
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,"de.schildbach.wallet.integration.android.BitcoinIntegration.requestForResult(android.app.Activity,int,java.lang.String,long)",Service Layer
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,de.schildbach.wallet.integration.android.BitcoinIntegration.transactionHashFromResult(android.content.Intent),Data Source Layer
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,"de.schildbach.wallet.integration.android.BitcoinIntegration.transactionHashToResult(android.content.Intent,java.lang.String)",Data Source Layer
+de.schildbach.wallet.integration.sample,de.schildbach.wallet.integration.sample.SampleActivity,de.schildbach.wallet.integration.sample.SampleActivity.de.schildbach.wallet.integration.sample.SampleActivity(),Presentation Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothService,de.schildbach.wallet.offline.AcceptBluetoothService.de.schildbach.wallet.offline.AcceptBluetoothService(),Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothService,de.schildbach.wallet.offline.AcceptBluetoothService.onBind(android.content.Intent),Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothService,de.schildbach.wallet.offline.AcceptBluetoothService.onCreate(),Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothService,de.schildbach.wallet.offline.AcceptBluetoothService.onDestroy(),Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothService,"de.schildbach.wallet.offline.AcceptBluetoothService.onStartCommand(android.content.Intent,int,int)",Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothThread,de.schildbach.wallet.offline.AcceptBluetoothThread.stopAccepting(),Data Source Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothThread$ClassicBluetoothThread,de.schildbach.wallet.offline.AcceptBluetoothThread$ClassicBluetoothThread.de.schildbach.wallet.offline.AcceptBluetoothThread$ClassicBluetoothThread(android.bluetooth.BluetoothAdapter),Data Source Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothThread$ClassicBluetoothThread,de.schildbach.wallet.offline.AcceptBluetoothThread$ClassicBluetoothThread.run(),Domain Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothThread$PaymentProtocolThread,de.schildbach.wallet.offline.AcceptBluetoothThread$PaymentProtocolThread.de.schildbach.wallet.offline.AcceptBluetoothThread$PaymentProtocolThread(android.bluetooth.BluetoothAdapter),Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothThread$PaymentProtocolThread,de.schildbach.wallet.offline.AcceptBluetoothThread$PaymentProtocolThread.run(),Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask,"de.schildbach.wallet.offline.DirectPaymentTask.de.schildbach.wallet.offline.DirectPaymentTask(android.os.Handler,de.schildbach.wallet.offline.DirectPaymentTask$ResultCallback)",Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask,de.schildbach.wallet.offline.DirectPaymentTask.send(org.bitcoin.protocols.payments.Protos.Payment),Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask$BluetoothPaymentTask,"de.schildbach.wallet.offline.DirectPaymentTask$BluetoothPaymentTask.de.schildbach.wallet.offline.DirectPaymentTask$BluetoothPaymentTask(android.os.Handler,de.schildbach.wallet.offline.DirectPaymentTask$ResultCallback,android.bluetooth.BluetoothAdapter,java.lang.String)",Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask$BluetoothPaymentTask,de.schildbach.wallet.offline.DirectPaymentTask$BluetoothPaymentTask.send(org.bitcoin.protocols.payments.Protos.Payment),Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask$HttpPaymentTask,"de.schildbach.wallet.offline.DirectPaymentTask$HttpPaymentTask.de.schildbach.wallet.offline.DirectPaymentTask$HttpPaymentTask(android.os.Handler,de.schildbach.wallet.offline.DirectPaymentTask$ResultCallback,java.lang.String,java.lang.String)",Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask$HttpPaymentTask,de.schildbach.wallet.offline.DirectPaymentTask$HttpPaymentTask.send(org.bitcoin.protocols.payments.Protos.Payment),Service Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask$ResultCallback,"de.schildbach.wallet.offline.DirectPaymentTask$ResultCallback.onFail(int,java.lang.Object[])",Presentation Layer
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask$ResultCallback,de.schildbach.wallet.offline.DirectPaymentTask$ResultCallback.onResult(boolean),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,"de.schildbach.wallet.service.BlockchainService.broadcastTransaction(android.content.Context,org.bitcoinj.core.Transaction)",Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.de.schildbach.wallet.service.BlockchainService(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.getBlockchainState(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.getConnectedPeers(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.getRecentBlocks(int),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.onBind(android.content.Intent),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.onCreate(),Domain Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.onDestroy(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,"de.schildbach.wallet.service.BlockchainService.onStartCommand(android.content.Intent,int,int)",Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.onTrimMemory(int),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.onUnbind(android.content.Intent),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.resetBlockchain(android.content.Context),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.scheduleStart(de.schildbach.wallet.WalletApplication),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,"de.schildbach.wallet.service.BlockchainService.start(android.content.Context,boolean)",Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,de.schildbach.wallet.service.BlockchainService.stop(android.content.Context),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$ImpedimentsLiveData,de.schildbach.wallet.service.BlockchainService$ImpedimentsLiveData.de.schildbach.wallet.service.BlockchainService$ImpedimentsLiveData(de.schildbach.wallet.WalletApplication),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$LocalBinder,de.schildbach.wallet.service.BlockchainService$LocalBinder.de.schildbach.wallet.service.BlockchainService$LocalBinder(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$LocalBinder,de.schildbach.wallet.service.BlockchainService$LocalBinder.getService(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$NewTransactionLiveData,de.schildbach.wallet.service.BlockchainService$NewTransactionLiveData.de.schildbach.wallet.service.BlockchainService$NewTransactionLiveData(org.bitcoinj.wallet.Wallet),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$NewTransactionLiveData$WalletListener,"de.schildbach.wallet.service.BlockchainService$NewTransactionLiveData$WalletListener.onCoinsReceived(org.bitcoinj.wallet.Wallet,org.bitcoinj.core.Transaction,org.bitcoinj.core.Coin,org.bitcoinj.core.Coin)",Presentation Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$NewTransactionLiveData$WalletListener,"de.schildbach.wallet.service.BlockchainService$NewTransactionLiveData$WalletListener.onCoinsSent(org.bitcoinj.wallet.Wallet,org.bitcoinj.core.Transaction,org.bitcoinj.core.Coin,org.bitcoinj.core.Coin)",Presentation Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener,de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener.de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener,"de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener.onPeerConnected(org.bitcoinj.core.Peer,int)",Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener,"de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener.onPeerDisconnected(org.bitcoinj.core.Peer,int)",Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener,"de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener.onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)",Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener,de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener.stop(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainState,"de.schildbach.wallet.service.BlockchainState.de.schildbach.wallet.service.BlockchainState(java.util.Date,int,boolean,java.util.Set)",Domain Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainState,de.schildbach.wallet.service.BlockchainState.fromIntent(android.content.Intent),Domain Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainState,de.schildbach.wallet.service.BlockchainState.putExtras(android.content.Intent),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.BootstrapReceiver,de.schildbach.wallet.service.BootstrapReceiver.de.schildbach.wallet.service.BootstrapReceiver(),Cross-Cutting
+de.schildbach.wallet.service,de.schildbach.wallet.service.BootstrapReceiver,"de.schildbach.wallet.service.BootstrapReceiver.onReceive(android.content.Context,android.content.Intent)",Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.InactivityNotificationService,de.schildbach.wallet.service.InactivityNotificationService.de.schildbach.wallet.service.InactivityNotificationService(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.InactivityNotificationService,de.schildbach.wallet.service.InactivityNotificationService.onCreate(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.InactivityNotificationService,de.schildbach.wallet.service.InactivityNotificationService.startMaybeShowNotification(android.content.Context),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.UpgradeWalletService,de.schildbach.wallet.service.UpgradeWalletService.de.schildbach.wallet.service.UpgradeWalletService(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.UpgradeWalletService,de.schildbach.wallet.service.UpgradeWalletService.onCreate(),Service Layer
+de.schildbach.wallet.service,de.schildbach.wallet.service.UpgradeWalletService,de.schildbach.wallet.service.UpgradeWalletService.startUpgrade(android.content.Context),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AbstractWalletActivity,de.schildbach.wallet.ui.AbstractWalletActivity.de.schildbach.wallet.ui.AbstractWalletActivity(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AbstractWalletActivity,de.schildbach.wallet.ui.AbstractWalletActivity.getWalletApplication(),Cross-Cutting
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AbstractWalletActivity,de.schildbach.wallet.ui.AbstractWalletActivity.onOptionsItemSelected(android.view.MenuItem),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AbstractWalletActivity,de.schildbach.wallet.ui.AbstractWalletActivity.reportFullyDrawn(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AbstractWalletActivity,de.schildbach.wallet.ui.AbstractWalletActivity.setShowWhenLocked(boolean),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressAndLabel,"de.schildbach.wallet.ui.AddressAndLabel.de.schildbach.wallet.ui.AddressAndLabel(org.bitcoinj.core.Address,java.lang.String)",Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressAndLabel,"de.schildbach.wallet.ui.AddressAndLabel.de.schildbach.wallet.ui.AddressAndLabel(org.bitcoinj.core.NetworkParameters,java.lang.String,java.lang.String)",Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressAndLabel,de.schildbach.wallet.ui.AddressAndLabel.describeContents(),Cross-Cutting
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressAndLabel,de.schildbach.wallet.ui.AddressAndLabel.equals(java.lang.Object),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressAndLabel,de.schildbach.wallet.ui.AddressAndLabel.hashCode(),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressAndLabel,de.schildbach.wallet.ui.AddressAndLabel.toString(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressAndLabel,"de.schildbach.wallet.ui.AddressAndLabel.writeToParcel(android.os.Parcel,int)",Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity,de.schildbach.wallet.ui.AddressBookActivity.de.schildbach.wallet.ui.AddressBookActivity(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity,de.schildbach.wallet.ui.AddressBookActivity.start(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter,"de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter.de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter(android.support.v4.app.FragmentManager,android.support.v4.app.Fragment,android.support.v4.app.Fragment)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter,"de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter.destroyItem(android.view.ViewGroup,int,java.lang.Object)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter,de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter.finishUpdate(android.view.ViewGroup),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter,de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter.getCount(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter,"de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter.instantiateItem(android.view.ViewGroup,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter,"de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter.isViewFromObject(android.view.View,java.lang.Object)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter,"de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter.setPrimaryItem(android.view.ViewGroup,int,java.lang.Object)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AlertDialogsFragment,de.schildbach.wallet.ui.AlertDialogsFragment.add(android.support.v4.app.FragmentManager),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AlertDialogsFragment,de.schildbach.wallet.ui.AlertDialogsFragment.de.schildbach.wallet.ui.AlertDialogsFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AlertDialogsFragment,de.schildbach.wallet.ui.AlertDialogsFragment.onActivityCreated(android.os.Bundle),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AlertDialogsFragment,de.schildbach.wallet.ui.AlertDialogsFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AlertDialogsFragment,de.schildbach.wallet.ui.AlertDialogsFragment.onCreate(android.os.Bundle),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AlertDialogsFragment,de.schildbach.wallet.ui.AlertDialogsFragment.onDestroy(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.BitmapFragment,de.schildbach.wallet.ui.BitmapFragment.de.schildbach.wallet.ui.BitmapFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.BitmapFragment,de.schildbach.wallet.ui.BitmapFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.BitmapFragment,de.schildbach.wallet.ui.BitmapFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.BitmapFragment,"de.schildbach.wallet.ui.BitmapFragment.show(android.support.v4.app.FragmentManager,android.graphics.Bitmap)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CircularProgressView,"de.schildbach.wallet.ui.CircularProgressView.de.schildbach.wallet.ui.CircularProgressView(android.content.Context,android.util.AttributeSet)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CircularProgressView,de.schildbach.wallet.ui.CircularProgressView.getBaseline(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CircularProgressView,"de.schildbach.wallet.ui.CircularProgressView.setColors(int,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CircularProgressView,de.schildbach.wallet.ui.CircularProgressView.setMaxProgress(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CircularProgressView,de.schildbach.wallet.ui.CircularProgressView.setMaxSize(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CircularProgressView,de.schildbach.wallet.ui.CircularProgressView.setProgress(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CircularProgressView,de.schildbach.wallet.ui.CircularProgressView.setSize(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.de.schildbach.wallet.ui.CurrencyAmountView(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,"de.schildbach.wallet.ui.CurrencyAmountView.de.schildbach.wallet.ui.CurrencyAmountView(android.content.Context,android.util.AttributeSet)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.getAmount(),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.getTextView(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,"de.schildbach.wallet.ui.CurrencyAmountView.setAmount(org.bitcoinj.core.Monetary,boolean)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.setAmountSigned(boolean),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,"de.schildbach.wallet.ui.CurrencyAmountView.setContextButton(int,de.schildbach.wallet.ui.OnClickListener)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.setCurrencySymbol(java.lang.String),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.setEnabled(boolean),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.setHint(org.bitcoinj.core.Monetary),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.setHintFormat(org.bitcoinj.utils.MonetaryFormat),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.setInputFormat(org.bitcoinj.utils.MonetaryFormat),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.setListener(de.schildbach.wallet.ui.CurrencyAmountView$Listener),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.setNextFocusId(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.setStrikeThru(boolean),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.setTextColor(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView.setValidateAmount(boolean),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView$Listener,de.schildbach.wallet.ui.CurrencyAmountView$Listener.changed(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView$Listener,de.schildbach.wallet.ui.CurrencyAmountView$Listener.focusChanged(boolean),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView$TextViewListener,de.schildbach.wallet.ui.CurrencyAmountView$TextViewListener.afterTextChanged(android.text.Editable),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView$TextViewListener,"de.schildbach.wallet.ui.CurrencyAmountView$TextViewListener.beforeTextChanged(java.lang.CharSequence,int,int,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView$TextViewListener,"de.schildbach.wallet.ui.CurrencyAmountView$TextViewListener.onFocusChange(android.view.View,boolean)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView$TextViewListener,"de.schildbach.wallet.ui.CurrencyAmountView$TextViewListener.onTextChanged(java.lang.CharSequence,int,int,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView$TextViewListener,de.schildbach.wallet.ui.CurrencyAmountView$TextViewListener.setFire(boolean),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.activeTextView(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,"de.schildbach.wallet.ui.CurrencyCalculatorLink.de.schildbach.wallet.ui.CurrencyCalculatorLink(de.schildbach.wallet.ui.CurrencyAmountView,de.schildbach.wallet.ui.CurrencyAmountView)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.getAmount(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.getExchangeDirection(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.getExchangeRate(),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.hasAmount(),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.requestFocus(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.setBtcAmount(org.bitcoinj.core.Coin),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.setEnabled(boolean),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.setExchangeDirection(boolean),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.setExchangeRate(org.bitcoinj.utils.ExchangeRate),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.setListener(de.schildbach.wallet.ui.CurrencyAmountView$Listener),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,de.schildbach.wallet.ui.CurrencyCalculatorLink.setNextFocusId(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencySymbolDrawable,"de.schildbach.wallet.ui.CurrencySymbolDrawable.de.schildbach.wallet.ui.CurrencySymbolDrawable(java.lang.String,float,int,float)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencySymbolDrawable,de.schildbach.wallet.ui.CurrencySymbolDrawable.draw(android.graphics.Canvas),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencySymbolDrawable,de.schildbach.wallet.ui.CurrencySymbolDrawable.getIntrinsicWidth(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencySymbolDrawable,de.schildbach.wallet.ui.CurrencySymbolDrawable.getOpacity(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencySymbolDrawable,de.schildbach.wallet.ui.CurrencySymbolDrawable.setAlpha(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencySymbolDrawable,de.schildbach.wallet.ui.CurrencySymbolDrawable.setColorFilter(android.graphics.ColorFilter),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyTextView,de.schildbach.wallet.ui.CurrencyTextView.de.schildbach.wallet.ui.CurrencyTextView(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyTextView,"de.schildbach.wallet.ui.CurrencyTextView.de.schildbach.wallet.ui.CurrencyTextView(android.content.Context,android.util.AttributeSet)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyTextView,de.schildbach.wallet.ui.CurrencyTextView.setAlwaysSigned(boolean),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyTextView,de.schildbach.wallet.ui.CurrencyTextView.setAmount(org.bitcoinj.core.Monetary),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyTextView,de.schildbach.wallet.ui.CurrencyTextView.setFormat(org.bitcoinj.utils.MonetaryFormat),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyTextView,de.schildbach.wallet.ui.CurrencyTextView.setInsignificantRelativeSize(float),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyTextView,de.schildbach.wallet.ui.CurrencyTextView.setPrefixColor(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyTextView,de.schildbach.wallet.ui.CurrencyTextView.setPrefixScaleX(float),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyTextView,de.schildbach.wallet.ui.CurrencyTextView.setStrikeThru(boolean),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DialogBuilder,de.schildbach.wallet.ui.DialogBuilder.de.schildbach.wallet.ui.DialogBuilder(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DialogBuilder,de.schildbach.wallet.ui.DialogBuilder.setIcon(android.graphics.drawable.Drawable),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DialogBuilder,de.schildbach.wallet.ui.DialogBuilder.setIcon(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DialogBuilder,de.schildbach.wallet.ui.DialogBuilder.setMessage(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DialogBuilder,de.schildbach.wallet.ui.DialogBuilder.setMessage(java.lang.CharSequence),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DialogBuilder,de.schildbach.wallet.ui.DialogBuilder.setTitle(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DialogBuilder,de.schildbach.wallet.ui.DialogBuilder.setTitle(java.lang.CharSequence),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DialogBuilder,de.schildbach.wallet.ui.DialogBuilder.singleDismissButton(android.content.DialogInterface.OnClickListener),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DialogBuilder,"de.schildbach.wallet.ui.DialogBuilder.warn(android.content.Context,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DividerItemDecoration,"de.schildbach.wallet.ui.DividerItemDecoration.de.schildbach.wallet.ui.DividerItemDecoration(android.content.Context,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DividerItemDecoration,"de.schildbach.wallet.ui.DividerItemDecoration.drawHorizontal(android.graphics.Canvas,android.support.v7.widget.RecyclerView)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DividerItemDecoration,"de.schildbach.wallet.ui.DividerItemDecoration.drawVertical(android.graphics.Canvas,android.support.v7.widget.RecyclerView)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DividerItemDecoration,"de.schildbach.wallet.ui.DividerItemDecoration.getItemOffsets(android.graphics.Rect,int,android.support.v7.widget.RecyclerView)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DividerItemDecoration,"de.schildbach.wallet.ui.DividerItemDecoration.onDraw(android.graphics.Canvas,android.support.v7.widget.RecyclerView)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DividerItemDecoration,de.schildbach.wallet.ui.DividerItemDecoration.setOrientation(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EditAddressBookEntryFragment,de.schildbach.wallet.ui.EditAddressBookEntryFragment.de.schildbach.wallet.ui.EditAddressBookEntryFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EditAddressBookEntryFragment,"de.schildbach.wallet.ui.EditAddressBookEntryFragment.edit(android.support.v4.app.FragmentManager,java.lang.String)",Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EditAddressBookEntryFragment,"de.schildbach.wallet.ui.EditAddressBookEntryFragment.edit(android.support.v4.app.FragmentManager,org.bitcoinj.core.Address)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EditAddressBookEntryFragment,"de.schildbach.wallet.ui.EditAddressBookEntryFragment.edit(android.support.v4.app.FragmentManager,org.bitcoinj.core.Address,java.lang.String)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EditAddressBookEntryFragment,de.schildbach.wallet.ui.EditAddressBookEntryFragment.onAttach(android.content.Context),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EditAddressBookEntryFragment,de.schildbach.wallet.ui.EditAddressBookEntryFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EncryptKeysDialogFragment,de.schildbach.wallet.ui.EncryptKeysDialogFragment.de.schildbach.wallet.ui.EncryptKeysDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EncryptKeysDialogFragment,de.schildbach.wallet.ui.EncryptKeysDialogFragment.onAttach(android.content.Context),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EncryptKeysDialogFragment,de.schildbach.wallet.ui.EncryptKeysDialogFragment.onCreate(android.os.Bundle),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EncryptKeysDialogFragment,de.schildbach.wallet.ui.EncryptKeysDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EncryptKeysDialogFragment,de.schildbach.wallet.ui.EncryptKeysDialogFragment.onDestroy(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EncryptKeysDialogFragment,de.schildbach.wallet.ui.EncryptKeysDialogFragment.onDismiss(android.content.DialogInterface),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EncryptKeysDialogFragment,de.schildbach.wallet.ui.EncryptKeysDialogFragment.onResume(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EncryptKeysDialogFragment,de.schildbach.wallet.ui.EncryptKeysDialogFragment.show(android.support.v4.app.FragmentManager),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesActivity,de.schildbach.wallet.ui.ExchangeRatesActivity.de.schildbach.wallet.ui.ExchangeRatesActivity(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter,"de.schildbach.wallet.ui.ExchangeRatesAdapter.buildListItems(android.database.Cursor,org.bitcoinj.core.Coin,de.schildbach.wallet.service.BlockchainState,java.lang.String,org.bitcoinj.core.Coin)",Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter,"de.schildbach.wallet.ui.ExchangeRatesAdapter.de.schildbach.wallet.ui.ExchangeRatesAdapter(android.content.Context,de.schildbach.wallet.ui.ExchangeRatesAdapter$OnClickListener)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter,"de.schildbach.wallet.ui.ExchangeRatesAdapter.onBindViewHolder(de.schildbach.wallet.ui.ExchangeRatesAdapter$ViewHolder,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter,"de.schildbach.wallet.ui.ExchangeRatesAdapter.onCreateViewHolder(android.view.ViewGroup,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter$ListItem,"de.schildbach.wallet.ui.ExchangeRatesAdapter$ListItem.de.schildbach.wallet.ui.ExchangeRatesAdapter$ListItem(de.schildbach.wallet.data.ExchangeRate,org.bitcoinj.utils.Fiat,int,org.bitcoinj.utils.Fiat,boolean)",Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter$OnClickListener,"de.schildbach.wallet.ui.ExchangeRatesAdapter$OnClickListener.onExchangeRateMenuClick(android.view.View,java.lang.String)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter$ViewHolder,de.schildbach.wallet.ui.ExchangeRatesAdapter$ViewHolder.de.schildbach.wallet.ui.ExchangeRatesAdapter$ViewHolder(android.view.View),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment,de.schildbach.wallet.ui.ExchangeRatesFragment.de.schildbach.wallet.ui.ExchangeRatesFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment,de.schildbach.wallet.ui.ExchangeRatesFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment,de.schildbach.wallet.ui.ExchangeRatesFragment.onCreate(android.os.Bundle),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment,"de.schildbach.wallet.ui.ExchangeRatesFragment.onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment,"de.schildbach.wallet.ui.ExchangeRatesFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment,de.schildbach.wallet.ui.ExchangeRatesFragment.onDestroy(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment,"de.schildbach.wallet.ui.ExchangeRatesFragment.onExchangeRateMenuClick(android.view.View,java.lang.String)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment,"de.schildbach.wallet.ui.ExchangeRatesFragment.onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)",Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment$ExchangeRatesLiveData,de.schildbach.wallet.ui.ExchangeRatesFragment$ExchangeRatesLiveData.de.schildbach.wallet.ui.ExchangeRatesFragment$ExchangeRatesLiveData(de.schildbach.wallet.WalletApplication),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment$ExchangeRatesLiveData,de.schildbach.wallet.ui.ExchangeRatesFragment$ExchangeRatesLiveData.setQuery(java.lang.String),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment$ViewModel,de.schildbach.wallet.ui.ExchangeRatesFragment$ViewModel.de.schildbach.wallet.ui.ExchangeRatesFragment$ViewModel(android.app.Application),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment$ViewModel,de.schildbach.wallet.ui.ExchangeRatesFragment$ViewModel.getBalance(),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment$ViewModel,de.schildbach.wallet.ui.ExchangeRatesFragment$ViewModel.getBlockchainState(),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment$ViewModel,de.schildbach.wallet.ui.ExchangeRatesFragment$ViewModel.getExchangeRates(),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.FancyListFragment,de.schildbach.wallet.ui.FancyListFragment.de.schildbach.wallet.ui.FancyListFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.FancyListFragment,"de.schildbach.wallet.ui.FancyListFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.FancyListFragment,de.schildbach.wallet.ui.FancyListFragment.setEmptyText(java.lang.CharSequence),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.HelpDialogFragment,de.schildbach.wallet.ui.HelpDialogFragment.de.schildbach.wallet.ui.HelpDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.HelpDialogFragment,de.schildbach.wallet.ui.HelpDialogFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.HelpDialogFragment,de.schildbach.wallet.ui.HelpDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.HelpDialogFragment,"de.schildbach.wallet.ui.HelpDialogFragment.page(android.support.v4.app.FragmentManager,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser,de.schildbach.wallet.ui.InputParser.de.schildbach.wallet.ui.InputParser(),Cross-Cutting
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser,de.schildbach.wallet.ui.InputParser.parse(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser,de.schildbach.wallet.ui.InputParser.parsePaymentRequest(byte[]),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$BinaryInputParser,"de.schildbach.wallet.ui.InputParser$BinaryInputParser.de.schildbach.wallet.ui.InputParser$BinaryInputParser(java.lang.String,byte[])",Cross-Cutting
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$BinaryInputParser,de.schildbach.wallet.ui.InputParser$BinaryInputParser.parse(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$StreamInputParser,"de.schildbach.wallet.ui.InputParser$StreamInputParser.de.schildbach.wallet.ui.InputParser$StreamInputParser(java.lang.String,java.io.InputStream)",Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$StreamInputParser,de.schildbach.wallet.ui.InputParser$StreamInputParser.parse(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$StringInputParser,de.schildbach.wallet.ui.InputParser$StringInputParser.de.schildbach.wallet.ui.InputParser$StringInputParser(java.lang.String),Cross-Cutting
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$StringInputParser,de.schildbach.wallet.ui.InputParser$StringInputParser.parse(),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.MaybeMaintenanceFragment,de.schildbach.wallet.ui.MaybeMaintenanceFragment.add(android.support.v4.app.FragmentManager),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.MaybeMaintenanceFragment,de.schildbach.wallet.ui.MaybeMaintenanceFragment.de.schildbach.wallet.ui.MaybeMaintenanceFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.MaybeMaintenanceFragment,de.schildbach.wallet.ui.MaybeMaintenanceFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.MaybeMaintenanceViewModel,de.schildbach.wallet.ui.MaybeMaintenanceViewModel.de.schildbach.wallet.ui.MaybeMaintenanceViewModel(android.app.Application),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.MaybeMaintenanceViewModel,de.schildbach.wallet.ui.MaybeMaintenanceViewModel.getDialogWasShown(),Cross-Cutting
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.MaybeMaintenanceViewModel,de.schildbach.wallet.ui.MaybeMaintenanceViewModel.setDialogWasShown(),Cross-Cutting
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.MaybeMaintenanceViewModel$WalletMaintenanceRecommendedLiveData,de.schildbach.wallet.ui.MaybeMaintenanceViewModel$WalletMaintenanceRecommendedLiveData.de.schildbach.wallet.ui.MaybeMaintenanceViewModel$WalletMaintenanceRecommendedLiveData(de.schildbach.wallet.WalletApplication),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ProgressDialogFragment,de.schildbach.wallet.ui.ProgressDialogFragment.de.schildbach.wallet.ui.ProgressDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ProgressDialogFragment,de.schildbach.wallet.ui.ProgressDialogFragment.dismissProgress(android.support.v4.app.FragmentManager),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ProgressDialogFragment,de.schildbach.wallet.ui.ProgressDialogFragment.onAttach(android.content.Context),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ProgressDialogFragment,de.schildbach.wallet.ui.ProgressDialogFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ProgressDialogFragment,de.schildbach.wallet.ui.ProgressDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ProgressDialogFragment,"de.schildbach.wallet.ui.ProgressDialogFragment.showProgress(android.support.v4.app.FragmentManager,java.lang.String)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogBuilder,"de.schildbach.wallet.ui.ReportIssueDialogBuilder.de.schildbach.wallet.ui.ReportIssueDialogBuilder(android.app.Activity,int,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogBuilder,"de.schildbach.wallet.ui.ReportIssueDialogBuilder.onClick(android.content.DialogInterface,int)",Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogFragment,de.schildbach.wallet.ui.ReportIssueDialogFragment.de.schildbach.wallet.ui.ReportIssueDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogFragment,de.schildbach.wallet.ui.ReportIssueDialogFragment.onAttach(android.content.Context),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogFragment,de.schildbach.wallet.ui.ReportIssueDialogFragment.onCreate(android.os.Bundle),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogFragment,de.schildbach.wallet.ui.ReportIssueDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogFragment,de.schildbach.wallet.ui.ReportIssueDialogFragment.onDismiss(android.content.DialogInterface),Cross-Cutting
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogFragment,"de.schildbach.wallet.ui.ReportIssueDialogFragment.show(android.support.v4.app.FragmentManager,int,int,java.lang.String,java.lang.String)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueViewModel,de.schildbach.wallet.ui.ReportIssueViewModel.de.schildbach.wallet.ui.ReportIssueViewModel(android.app.Application),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsActivity,de.schildbach.wallet.ui.RequestCoinsActivity.de.schildbach.wallet.ui.RequestCoinsActivity(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsActivity,de.schildbach.wallet.ui.RequestCoinsActivity.onAttachedToWindow(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsActivity,de.schildbach.wallet.ui.RequestCoinsActivity.onCreateOptionsMenu(android.view.Menu),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsActivity,de.schildbach.wallet.ui.RequestCoinsActivity.onOptionsItemSelected(android.view.MenuItem),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,de.schildbach.wallet.ui.RequestCoinsFragment.de.schildbach.wallet.ui.RequestCoinsFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,"de.schildbach.wallet.ui.RequestCoinsFragment.onActivityResult(int,int,android.content.Intent)",Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,de.schildbach.wallet.ui.RequestCoinsFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,de.schildbach.wallet.ui.RequestCoinsFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,"de.schildbach.wallet.ui.RequestCoinsFragment.onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,"de.schildbach.wallet.ui.RequestCoinsFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,de.schildbach.wallet.ui.RequestCoinsFragment.onDestroyView(),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,de.schildbach.wallet.ui.RequestCoinsFragment.onOptionsItemSelected(android.view.MenuItem),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,de.schildbach.wallet.ui.RequestCoinsFragment.onPause(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,de.schildbach.wallet.ui.RequestCoinsFragment.onPrepareOptionsMenu(android.view.Menu),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,de.schildbach.wallet.ui.RequestCoinsFragment.onResume(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,de.schildbach.wallet.ui.RequestCoinsFragment.onSaveInstanceState(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,"de.schildbach.wallet.ui.RequestCoinsFragment.onViewCreated(android.view.View,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsViewModel,de.schildbach.wallet.ui.RequestCoinsViewModel.de.schildbach.wallet.ui.RequestCoinsViewModel(android.app.Application),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsViewModel$FreshReceiveAddressLiveData,de.schildbach.wallet.ui.RequestCoinsViewModel$FreshReceiveAddressLiveData.de.schildbach.wallet.ui.RequestCoinsViewModel$FreshReceiveAddressLiveData(de.schildbach.wallet.WalletApplication),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsViewModel$FreshReceiveAddressLiveData,de.schildbach.wallet.ui.RequestCoinsViewModel$FreshReceiveAddressLiveData.setValue(org.bitcoinj.core.Address),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendCoinsQrActivity,de.schildbach.wallet.ui.SendCoinsQrActivity.de.schildbach.wallet.ui.SendCoinsQrActivity(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendCoinsQrActivity,"de.schildbach.wallet.ui.SendCoinsQrActivity.onActivityResult(int,int,android.content.Intent)",Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesFragment,de.schildbach.wallet.ui.SendingAddressesFragment.de.schildbach.wallet.ui.SendingAddressesFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesFragment,"de.schildbach.wallet.ui.SendingAddressesFragment.onActivityResult(int,int,android.content.Intent)",Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesFragment,de.schildbach.wallet.ui.SendingAddressesFragment.onAttach(android.content.Context),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesFragment,de.schildbach.wallet.ui.SendingAddressesFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesFragment,"de.schildbach.wallet.ui.SendingAddressesFragment.onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesFragment,"de.schildbach.wallet.ui.SendingAddressesFragment.onListItemClick(android.widget.ListView,android.view.View,int,long)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesFragment,de.schildbach.wallet.ui.SendingAddressesFragment.onOptionsItemSelected(android.view.MenuItem),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesFragment,de.schildbach.wallet.ui.SendingAddressesFragment.onPrepareOptionsMenu(android.view.Menu),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesViewModel,de.schildbach.wallet.ui.SendingAddressesViewModel.de.schildbach.wallet.ui.SendingAddressesViewModel(android.app.Application),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesViewModel$AddressesToExcludeLiveData,de.schildbach.wallet.ui.SendingAddressesViewModel$AddressesToExcludeLiveData.de.schildbach.wallet.ui.SendingAddressesViewModel$AddressesToExcludeLiveData(de.schildbach.wallet.WalletApplication),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesViewModel$ClipLiveData,de.schildbach.wallet.ui.SendingAddressesViewModel$ClipLiveData.de.schildbach.wallet.ui.SendingAddressesViewModel$ClipLiveData(de.schildbach.wallet.WalletApplication),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesViewModel$ClipLiveData,de.schildbach.wallet.ui.SendingAddressesViewModel$ClipLiveData.onPrimaryClipChanged(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesViewModel$ClipLiveData,de.schildbach.wallet.ui.SendingAddressesViewModel$ClipLiveData.setClipData(android.content.ClipData),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ShowPasswordCheckListener,de.schildbach.wallet.ui.ShowPasswordCheckListener.de.schildbach.wallet.ui.ShowPasswordCheckListener(android.widget.EditText[]),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ShowPasswordCheckListener,"de.schildbach.wallet.ui.ShowPasswordCheckListener.onCheckedChanged(android.widget.CompoundButton,boolean)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.StickToTopLinearLayoutManager,de.schildbach.wallet.ui.StickToTopLinearLayoutManager.de.schildbach.wallet.ui.StickToTopLinearLayoutManager(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.StickToTopLinearLayoutManager,"de.schildbach.wallet.ui.StickToTopLinearLayoutManager.onItemsAdded(android.support.v7.widget.RecyclerView,int,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter,"de.schildbach.wallet.ui.TransactionsAdapter.buildListItems(android.content.Context,java.util.List,de.schildbach.wallet.ui.TransactionsAdapter$WarningType,org.bitcoinj.wallet.Wallet,java.util.Map,org.bitcoinj.utils.MonetaryFormat,int,org.bitcoinj.core.Sha256Hash)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter,"de.schildbach.wallet.ui.TransactionsAdapter.de.schildbach.wallet.ui.TransactionsAdapter(android.content.Context,int,de.schildbach.wallet.ui.TransactionsAdapter$OnClickListener)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter,de.schildbach.wallet.ui.TransactionsAdapter.getItemViewType(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter,"de.schildbach.wallet.ui.TransactionsAdapter.onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter,"de.schildbach.wallet.ui.TransactionsAdapter.onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int,java.util.List)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter,"de.schildbach.wallet.ui.TransactionsAdapter.onCreateViewHolder(android.view.ViewGroup,int)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$ItemAnimator,"de.schildbach.wallet.ui.TransactionsAdapter$ItemAnimator.canReuseUpdatedViewHolder(android.support.v7.widget.RecyclerView.ViewHolder,java.util.List)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$ItemAnimator,de.schildbach.wallet.ui.TransactionsAdapter$ItemAnimator.de.schildbach.wallet.ui.TransactionsAdapter$ItemAnimator(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$ListItem,de.schildbach.wallet.ui.TransactionsAdapter$ListItem.de.schildbach.wallet.ui.TransactionsAdapter$ListItem(),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$ListItem$TransactionItem,"de.schildbach.wallet.ui.TransactionsAdapter$ListItem$TransactionItem.de.schildbach.wallet.ui.TransactionsAdapter$ListItem$TransactionItem(android.content.Context,org.bitcoinj.core.Transaction,org.bitcoinj.wallet.Wallet,java.util.Map,org.bitcoinj.utils.MonetaryFormat,int,boolean)",Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$ListItem$WarningItem,de.schildbach.wallet.ui.TransactionsAdapter$ListItem$WarningItem.de.schildbach.wallet.ui.TransactionsAdapter$ListItem$WarningItem(de.schildbach.wallet.ui.TransactionsAdapter$WarningType),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$OnClickListener,"de.schildbach.wallet.ui.TransactionsAdapter$OnClickListener.onTransactionClick(android.view.View,org.bitcoinj.core.Sha256Hash)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$OnClickListener,"de.schildbach.wallet.ui.TransactionsAdapter$OnClickListener.onTransactionMenuClick(android.view.View,org.bitcoinj.core.Sha256Hash)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$OnClickListener,de.schildbach.wallet.ui.TransactionsAdapter$OnClickListener.onWarningClick(android.view.View),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$TransactionViewHolder,de.schildbach.wallet.ui.TransactionsAdapter$TransactionViewHolder.bind(de.schildbach.wallet.ui.TransactionsAdapter$ListItem$TransactionItem),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$TransactionViewHolder,de.schildbach.wallet.ui.TransactionsAdapter$TransactionViewHolder.de.schildbach.wallet.ui.TransactionsAdapter$TransactionViewHolder(android.view.View),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActionsFragment,de.schildbach.wallet.ui.WalletActionsFragment.de.schildbach.wallet.ui.WalletActionsFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActionsFragment,de.schildbach.wallet.ui.WalletActionsFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActionsFragment,"de.schildbach.wallet.ui.WalletActionsFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActionsFragment,de.schildbach.wallet.ui.WalletActionsFragment.onResume(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,de.schildbach.wallet.ui.WalletActivity.de.schildbach.wallet.ui.WalletActivity(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,de.schildbach.wallet.ui.WalletActivity.handleBackupWallet(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,de.schildbach.wallet.ui.WalletActivity.handleEncryptKeys(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,de.schildbach.wallet.ui.WalletActivity.handleRequestCoins(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,de.schildbach.wallet.ui.WalletActivity.handleRestoreWallet(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,de.schildbach.wallet.ui.WalletActivity.handleScan(android.view.View),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,de.schildbach.wallet.ui.WalletActivity.handleSendCoins(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,"de.schildbach.wallet.ui.WalletActivity.onActivityResult(int,int,android.content.Intent)",Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,de.schildbach.wallet.ui.WalletActivity.onCreateOptionsMenu(android.view.Menu),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,de.schildbach.wallet.ui.WalletActivity.onOptionsItemSelected(android.view.MenuItem),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,de.schildbach.wallet.ui.WalletActivity.onPrepareOptionsMenu(android.view.Menu),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressDialogFragment,de.schildbach.wallet.ui.WalletAddressDialogFragment.de.schildbach.wallet.ui.WalletAddressDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressDialogFragment,de.schildbach.wallet.ui.WalletAddressDialogFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressDialogFragment,de.schildbach.wallet.ui.WalletAddressDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressDialogFragment,"de.schildbach.wallet.ui.WalletAddressDialogFragment.show(android.support.v4.app.FragmentManager,org.bitcoinj.core.Address,java.lang.String)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressFragment,de.schildbach.wallet.ui.WalletAddressFragment.de.schildbach.wallet.ui.WalletAddressFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressFragment,de.schildbach.wallet.ui.WalletAddressFragment.onAttach(android.content.Context),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressFragment,de.schildbach.wallet.ui.WalletAddressFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressFragment,"de.schildbach.wallet.ui.WalletAddressFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressViewModel,de.schildbach.wallet.ui.WalletAddressViewModel.de.schildbach.wallet.ui.WalletAddressViewModel(android.app.Application),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData,de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData.de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData(de.schildbach.wallet.WalletApplication),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData$WalletListener,"de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData$WalletListener.onCoinsReceived(org.bitcoinj.wallet.Wallet,org.bitcoinj.core.Transaction,org.bitcoinj.core.Coin,org.bitcoinj.core.Coin)",Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData$WalletListener,"de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData$WalletListener.onCoinsSent(org.bitcoinj.wallet.Wallet,org.bitcoinj.core.Transaction,org.bitcoinj.core.Coin,org.bitcoinj.core.Coin)",Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData$WalletListener,de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData$WalletListener.onReorganize(org.bitcoinj.wallet.Wallet),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData$WalletListener,de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData$WalletListener.onWalletChanged(org.bitcoinj.wallet.Wallet),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,de.schildbach.wallet.ui.WalletAddressesAdapter.de.schildbach.wallet.ui.WalletAddressesAdapter(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,de.schildbach.wallet.ui.WalletAddressesAdapter.getCount(),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,de.schildbach.wallet.ui.WalletAddressesAdapter.getItem(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,de.schildbach.wallet.ui.WalletAddressesAdapter.getItemId(int),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,de.schildbach.wallet.ui.WalletAddressesAdapter.getItemViewType(int),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,"de.schildbach.wallet.ui.WalletAddressesAdapter.getView(int,android.view.View,android.view.ViewGroup)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,de.schildbach.wallet.ui.WalletAddressesAdapter.getViewTypeCount(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,de.schildbach.wallet.ui.WalletAddressesAdapter.hasStableIds(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,de.schildbach.wallet.ui.WalletAddressesAdapter.replaceDerivedKeys(java.util.Collection),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,de.schildbach.wallet.ui.WalletAddressesAdapter.replaceRandomKeys(java.util.Collection),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,de.schildbach.wallet.ui.WalletAddressesAdapter.setAddressBook(java.util.Map),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,de.schildbach.wallet.ui.WalletAddressesAdapter.setWallet(org.bitcoinj.wallet.Wallet),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesFragment,de.schildbach.wallet.ui.WalletAddressesFragment.de.schildbach.wallet.ui.WalletAddressesFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesFragment,de.schildbach.wallet.ui.WalletAddressesFragment.onAttach(android.content.Context),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesFragment,de.schildbach.wallet.ui.WalletAddressesFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesFragment,"de.schildbach.wallet.ui.WalletAddressesFragment.onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesFragment,"de.schildbach.wallet.ui.WalletAddressesFragment.onListItemClick(android.widget.ListView,android.view.View,int,long)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesFragment,"de.schildbach.wallet.ui.WalletAddressesFragment.onViewCreated(android.view.View,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesViewModel,de.schildbach.wallet.ui.WalletAddressesViewModel.de.schildbach.wallet.ui.WalletAddressesViewModel(android.app.Application),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesViewModel$ImportedKeysLiveData,de.schildbach.wallet.ui.WalletAddressesViewModel$ImportedKeysLiveData.de.schildbach.wallet.ui.WalletAddressesViewModel$ImportedKeysLiveData(de.schildbach.wallet.WalletApplication),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesViewModel$ImportedKeysLiveData,de.schildbach.wallet.ui.WalletAddressesViewModel$ImportedKeysLiveData.onKeysAdded(java.util.List),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesViewModel$IssuedReceiveKeysLiveData,de.schildbach.wallet.ui.WalletAddressesViewModel$IssuedReceiveKeysLiveData.de.schildbach.wallet.ui.WalletAddressesViewModel$IssuedReceiveKeysLiveData(de.schildbach.wallet.WalletApplication),Cross-Cutting
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesViewModel$IssuedReceiveKeysLiveData,de.schildbach.wallet.ui.WalletAddressesViewModel$IssuedReceiveKeysLiveData.onKeysAdded(java.util.List),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment,de.schildbach.wallet.ui.WalletBalanceFragment.de.schildbach.wallet.ui.WalletBalanceFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment,de.schildbach.wallet.ui.WalletBalanceFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment,de.schildbach.wallet.ui.WalletBalanceFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment,"de.schildbach.wallet.ui.WalletBalanceFragment.onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment,"de.schildbach.wallet.ui.WalletBalanceFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment,de.schildbach.wallet.ui.WalletBalanceFragment.onOptionsItemSelected(android.view.MenuItem),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment,de.schildbach.wallet.ui.WalletBalanceFragment.onPrepareOptionsMenu(android.view.Menu),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment,"de.schildbach.wallet.ui.WalletBalanceFragment.onViewCreated(android.view.View,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment$ViewModel,de.schildbach.wallet.ui.WalletBalanceFragment$ViewModel.de.schildbach.wallet.ui.WalletBalanceFragment$ViewModel(android.app.Application),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment$ViewModel,de.schildbach.wallet.ui.WalletBalanceFragment$ViewModel.getBalance(),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment$ViewModel,de.schildbach.wallet.ui.WalletBalanceFragment$ViewModel.getBlockchainState(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment$ViewModel,de.schildbach.wallet.ui.WalletBalanceFragment$ViewModel.getExchangeRate(),Data Source Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment,de.schildbach.wallet.ui.WalletDisclaimerFragment.de.schildbach.wallet.ui.WalletDisclaimerFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment,de.schildbach.wallet.ui.WalletDisclaimerFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment,"de.schildbach.wallet.ui.WalletDisclaimerFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment$DisclaimerEnabledLiveData,de.schildbach.wallet.ui.WalletDisclaimerFragment$DisclaimerEnabledLiveData.de.schildbach.wallet.ui.WalletDisclaimerFragment$DisclaimerEnabledLiveData(de.schildbach.wallet.WalletApplication),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment$DisclaimerEnabledLiveData,"de.schildbach.wallet.ui.WalletDisclaimerFragment$DisclaimerEnabledLiveData.onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)",Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment$ViewModel,de.schildbach.wallet.ui.WalletDisclaimerFragment$ViewModel.de.schildbach.wallet.ui.WalletDisclaimerFragment$ViewModel(android.app.Application),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment$ViewModel,de.schildbach.wallet.ui.WalletDisclaimerFragment$ViewModel.getBlockchainState(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment$ViewModel,de.schildbach.wallet.ui.WalletDisclaimerFragment$ViewModel.getDisclaimerEnabled(),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,de.schildbach.wallet.ui.WalletTransactionsFragment.de.schildbach.wallet.ui.WalletTransactionsFragment(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,de.schildbach.wallet.ui.WalletTransactionsFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,de.schildbach.wallet.ui.WalletTransactionsFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,"de.schildbach.wallet.ui.WalletTransactionsFragment.onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,"de.schildbach.wallet.ui.WalletTransactionsFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,de.schildbach.wallet.ui.WalletTransactionsFragment.onOptionsItemSelected(android.view.MenuItem),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,de.schildbach.wallet.ui.WalletTransactionsFragment.onPrepareOptionsMenu(android.view.Menu),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,de.schildbach.wallet.ui.WalletTransactionsFragment.onResume(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,"de.schildbach.wallet.ui.WalletTransactionsFragment.onTransactionClick(android.view.View,org.bitcoinj.core.Sha256Hash)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,"de.schildbach.wallet.ui.WalletTransactionsFragment.onTransactionMenuClick(android.view.View,org.bitcoinj.core.Sha256Hash)",Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,de.schildbach.wallet.ui.WalletTransactionsFragment.onWarningClick(android.view.View),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel,de.schildbach.wallet.ui.WalletTransactionsViewModel.de.schildbach.wallet.ui.WalletTransactionsViewModel(android.app.Application),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel,de.schildbach.wallet.ui.WalletTransactionsViewModel.getSelectedTransaction(),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel,de.schildbach.wallet.ui.WalletTransactionsViewModel.setDirection(de.schildbach.wallet.ui.WalletTransactionsViewModel$Direction),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel,de.schildbach.wallet.ui.WalletTransactionsViewModel.setSelectedTransaction(org.bitcoinj.core.Sha256Hash),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel,de.schildbach.wallet.ui.WalletTransactionsViewModel.setWarning(de.schildbach.wallet.ui.TransactionsAdapter$WarningType),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsConfidenceLiveData,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsConfidenceLiveData.de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsConfidenceLiveData(de.schildbach.wallet.WalletApplication),Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsConfidenceLiveData,"de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsConfidenceLiveData.onTransactionConfidenceChanged(org.bitcoinj.wallet.Wallet,org.bitcoinj.core.Transaction)",Domain Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData.de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData(de.schildbach.wallet.WalletApplication),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData$WalletListener,"de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData$WalletListener.onCoinsReceived(org.bitcoinj.wallet.Wallet,org.bitcoinj.core.Transaction,org.bitcoinj.core.Coin,org.bitcoinj.core.Coin)",Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData$WalletListener,"de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData$WalletListener.onCoinsSent(org.bitcoinj.wallet.Wallet,org.bitcoinj.core.Transaction,org.bitcoinj.core.Coin,org.bitcoinj.core.Coin)",Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData$WalletListener,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData$WalletListener.onReorganize(org.bitcoinj.wallet.Wallet),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData$WalletListener,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData$WalletListener.onWalletChanged(org.bitcoinj.wallet.Wallet),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletViewModel,de.schildbach.wallet.ui.WalletViewModel.addressLoadingFinished(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletViewModel,de.schildbach.wallet.ui.WalletViewModel.animateWhenLoadingFinished(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletViewModel,de.schildbach.wallet.ui.WalletViewModel.animationFinished(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletViewModel,de.schildbach.wallet.ui.WalletViewModel.balanceLoadingFinished(),Presentation Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletViewModel,de.schildbach.wallet.ui.WalletViewModel.de.schildbach.wallet.ui.WalletViewModel(android.app.Application),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletViewModel,de.schildbach.wallet.ui.WalletViewModel.onFirstPreDraw(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletViewModel,de.schildbach.wallet.ui.WalletViewModel.transactionsLoadingFinished(),Service Layer
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletViewModel$WalletEncryptedLiveData,de.schildbach.wallet.ui.WalletViewModel$WalletEncryptedLiveData.de.schildbach.wallet.ui.WalletViewModel$WalletEncryptedLiveData(de.schildbach.wallet.WalletApplication),Service Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment.de.schildbach.wallet.ui.backup.BackupWalletDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment,"de.schildbach.wallet.ui.backup.BackupWalletDialogFragment.onActivityResult(int,int,android.content.Intent)",Service Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment.onDismiss(android.content.DialogInterface),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment.show(android.support.v4.app.FragmentManager),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$ErrorDialogFragment,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$ErrorDialogFragment.de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$ErrorDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$ErrorDialogFragment,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$ErrorDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$ErrorDialogFragment,"de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$ErrorDialogFragment.showDialog(android.support.v4.app.FragmentManager,java.lang.String)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$SuccessDialogFragment,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$SuccessDialogFragment.de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$SuccessDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$SuccessDialogFragment,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$SuccessDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$SuccessDialogFragment,"de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$SuccessDialogFragment.showDialog(android.support.v4.app.FragmentManager,java.lang.String)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletViewModel,de.schildbach.wallet.ui.backup.BackupWalletViewModel.de.schildbach.wallet.ui.backup.BackupWalletViewModel(android.app.Application),Service Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.FileAdapter,de.schildbach.wallet.ui.backup.FileAdapter.de.schildbach.wallet.ui.backup.FileAdapter(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.FileAdapter,"de.schildbach.wallet.ui.backup.FileAdapter.getView(int,android.view.View,android.view.ViewGroup)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.FileAdapter,de.schildbach.wallet.ui.backup.FileAdapter.setFiles(java.util.List),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener,de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener.afterTextChanged(android.text.Editable),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener,"de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener.beforeTextChanged(java.lang.CharSequence,int,int,int)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener,"de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener.de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener(android.widget.TextView,android.app.AlertDialog)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener,de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener.handle(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener,"de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener.onItemSelected(android.widget.AdapterView,android.view.View,int,long)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener,de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener.onNothingSelected(android.widget.AdapterView),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener,"de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener.onTextChanged(java.lang.CharSequence,int,int,int)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment.de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment,"de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment.onRequestPermissionsResult(int,java.lang.String[],int[])",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment.onResume(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment.show(android.support.v4.app.FragmentManager),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$FailureDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$FailureDialogFragment.de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$FailureDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$FailureDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$FailureDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$FailureDialogFragment,"de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$FailureDialogFragment.showDialog(android.support.v4.app.FragmentManager,java.lang.String)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$PermissionDeniedDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$PermissionDeniedDialogFragment.de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$PermissionDeniedDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$PermissionDeniedDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$PermissionDeniedDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$PermissionDeniedDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$PermissionDeniedDialogFragment.showDialog(android.support.v4.app.FragmentManager),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$SuccessDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$SuccessDialogFragment.de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$SuccessDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$SuccessDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$SuccessDialogFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$SuccessDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$SuccessDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$SuccessDialogFragment,"de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$SuccessDialogFragment.showDialog(android.support.v4.app.FragmentManager,boolean)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalActivity,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalActivity.de.schildbach.wallet.ui.backup.RestoreWalletFromExternalActivity(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment.de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment.onAttach(android.content.Context),Service Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment.onCreate(android.os.Bundle),Service Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment,"de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment.show(android.support.v4.app.FragmentManager,android.net.Uri)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$FailureDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$FailureDialogFragment.de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$FailureDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$FailureDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$FailureDialogFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$FailureDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$FailureDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$FailureDialogFragment,"de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$FailureDialogFragment.showDialog(android.support.v4.app.FragmentManager,java.lang.String,android.net.Uri)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$SuccessDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$SuccessDialogFragment.de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$SuccessDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$SuccessDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$SuccessDialogFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$SuccessDialogFragment,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$SuccessDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$SuccessDialogFragment,"de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$SuccessDialogFragment.showDialog(android.support.v4.app.FragmentManager,boolean)",Presentation Layer
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletViewModel,de.schildbach.wallet.ui.backup.RestoreWalletViewModel.de.schildbach.wallet.ui.backup.RestoreWalletViewModel(android.app.Application),Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListAdapter,"de.schildbach.wallet.ui.monitor.BlockListAdapter.buildListItems(android.content.Context,java.util.List,java.util.Date,org.bitcoinj.utils.MonetaryFormat,java.util.Set,org.bitcoinj.wallet.Wallet,java.util.Map)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListAdapter,"de.schildbach.wallet.ui.monitor.BlockListAdapter.de.schildbach.wallet.ui.monitor.BlockListAdapter(android.content.Context,de.schildbach.wallet.ui.monitor.BlockListAdapter$OnClickListener)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListAdapter,"de.schildbach.wallet.ui.monitor.BlockListAdapter.onBindViewHolder(de.schildbach.wallet.ui.monitor.BlockListAdapter$ViewHolder,int)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListAdapter,"de.schildbach.wallet.ui.monitor.BlockListAdapter.onCreateViewHolder(android.view.ViewGroup,int)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListAdapter$ListItem,"de.schildbach.wallet.ui.monitor.BlockListAdapter$ListItem.de.schildbach.wallet.ui.monitor.BlockListAdapter$ListItem(android.content.Context,org.bitcoinj.core.StoredBlock,java.util.Date,org.bitcoinj.utils.MonetaryFormat,java.util.Set,org.bitcoinj.wallet.Wallet,java.util.Map)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListAdapter$ListItem$ListTransaction,"de.schildbach.wallet.ui.monitor.BlockListAdapter$ListItem$ListTransaction.de.schildbach.wallet.ui.monitor.BlockListAdapter$ListItem$ListTransaction(android.content.Context,org.bitcoinj.core.Transaction,org.bitcoinj.wallet.Wallet,java.util.Map)",Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListAdapter$OnClickListener,"de.schildbach.wallet.ui.monitor.BlockListAdapter$OnClickListener.onBlockMenuClick(android.view.View,org.bitcoinj.core.Sha256Hash)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment,de.schildbach.wallet.ui.monitor.BlockListFragment.de.schildbach.wallet.ui.monitor.BlockListFragment(),Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment,de.schildbach.wallet.ui.monitor.BlockListFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment,"de.schildbach.wallet.ui.monitor.BlockListFragment.onBlockMenuClick(android.view.View,org.bitcoinj.core.Sha256Hash)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment,de.schildbach.wallet.ui.monitor.BlockListFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment,"de.schildbach.wallet.ui.monitor.BlockListFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment$BlocksLiveData,"de.schildbach.wallet.ui.monitor.BlockListFragment$BlocksLiveData.onServiceConnected(android.content.ComponentName,android.os.IBinder)",Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment$BlocksLiveData,de.schildbach.wallet.ui.monitor.BlockListFragment$BlocksLiveData.onServiceDisconnected(android.content.ComponentName),Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel.de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel(android.app.Application),Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel.getBlocks(),Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel.getTime(),Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel.getTransactions(),Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel.getWallet(),Domain Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.NetworkMonitorActivity,de.schildbach.wallet.ui.monitor.NetworkMonitorActivity.de.schildbach.wallet.ui.monitor.NetworkMonitorActivity(),Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.NetworkMonitorActivity$PagerAdapter,de.schildbach.wallet.ui.monitor.NetworkMonitorActivity$PagerAdapter.de.schildbach.wallet.ui.monitor.NetworkMonitorActivity$PagerAdapter(android.support.v4.app.FragmentManager),Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.NetworkMonitorActivity$PagerAdapter,de.schildbach.wallet.ui.monitor.NetworkMonitorActivity$PagerAdapter.getCount(),Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.NetworkMonitorActivity$PagerAdapter,de.schildbach.wallet.ui.monitor.NetworkMonitorActivity$PagerAdapter.getItem(int),Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListAdapter,"de.schildbach.wallet.ui.monitor.PeerListAdapter.buildListItems(android.content.Context,java.util.List,java.util.Map)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListAdapter,de.schildbach.wallet.ui.monitor.PeerListAdapter.de.schildbach.wallet.ui.monitor.PeerListAdapter(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListAdapter,"de.schildbach.wallet.ui.monitor.PeerListAdapter.onBindViewHolder(de.schildbach.wallet.ui.monitor.PeerListAdapter$ViewHolder,int)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListAdapter,"de.schildbach.wallet.ui.monitor.PeerListAdapter.onCreateViewHolder(android.view.ViewGroup,int)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListAdapter$ListItem,"de.schildbach.wallet.ui.monitor.PeerListAdapter$ListItem.de.schildbach.wallet.ui.monitor.PeerListAdapter$ListItem(android.content.Context,org.bitcoinj.core.Peer,java.util.Map)",Domain Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment,de.schildbach.wallet.ui.monitor.PeerListFragment.de.schildbach.wallet.ui.monitor.PeerListFragment(),Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment,de.schildbach.wallet.ui.monitor.PeerListFragment.onAttach(android.content.Context),Cross-Cutting
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment,de.schildbach.wallet.ui.monitor.PeerListFragment.onCreate(android.os.Bundle),Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment,"de.schildbach.wallet.ui.monitor.PeerListFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$HostnamesLiveData,de.schildbach.wallet.ui.monitor.PeerListFragment$HostnamesLiveData.de.schildbach.wallet.ui.monitor.PeerListFragment$HostnamesLiveData(de.schildbach.wallet.WalletApplication),Cross-Cutting
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$HostnamesLiveData,de.schildbach.wallet.ui.monitor.PeerListFragment$HostnamesLiveData.reverseLookup(java.net.InetAddress),Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$PeersLiveData,"de.schildbach.wallet.ui.monitor.PeerListFragment$PeersLiveData.onServiceConnected(android.content.ComponentName,android.os.IBinder)",Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$PeersLiveData,de.schildbach.wallet.ui.monitor.PeerListFragment$PeersLiveData.onServiceDisconnected(android.content.ComponentName),Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$ViewModel,de.schildbach.wallet.ui.monitor.PeerListFragment$ViewModel.de.schildbach.wallet.ui.monitor.PeerListFragment$ViewModel(android.app.Application),Service Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$ViewModel,de.schildbach.wallet.ui.monitor.PeerListFragment$ViewModel.getHostnames(),Presentation Layer
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$ViewModel,de.schildbach.wallet.ui.monitor.PeerListFragment$ViewModel.getPeers(),Domain Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.AboutFragment,de.schildbach.wallet.ui.preference.AboutFragment.de.schildbach.wallet.ui.preference.AboutFragment(),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.AboutFragment,de.schildbach.wallet.ui.preference.AboutFragment.onAttach(android.app.Activity),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.AboutFragment,de.schildbach.wallet.ui.preference.AboutFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.DiagnosticsFragment,de.schildbach.wallet.ui.preference.DiagnosticsFragment.de.schildbach.wallet.ui.preference.DiagnosticsFragment(),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.DiagnosticsFragment,de.schildbach.wallet.ui.preference.DiagnosticsFragment.onAttach(android.app.Activity),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.DiagnosticsFragment,de.schildbach.wallet.ui.preference.DiagnosticsFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.DiagnosticsFragment,"de.schildbach.wallet.ui.preference.DiagnosticsFragment.onPreferenceTreeClick(android.preference.PreferenceScreen,android.preference.Preference)",Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.ExtendedPublicKeyFragment,de.schildbach.wallet.ui.preference.ExtendedPublicKeyFragment.de.schildbach.wallet.ui.preference.ExtendedPublicKeyFragment(),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.ExtendedPublicKeyFragment,de.schildbach.wallet.ui.preference.ExtendedPublicKeyFragment.onAttach(android.app.Activity),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.ExtendedPublicKeyFragment,de.schildbach.wallet.ui.preference.ExtendedPublicKeyFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.ExtendedPublicKeyFragment,"de.schildbach.wallet.ui.preference.ExtendedPublicKeyFragment.show(android.app.FragmentManager,java.lang.CharSequence)",Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.PreferenceActivity,de.schildbach.wallet.ui.preference.PreferenceActivity.de.schildbach.wallet.ui.preference.PreferenceActivity(),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.PreferenceActivity,de.schildbach.wallet.ui.preference.PreferenceActivity.onBuildHeaders(java.util.List),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.PreferenceActivity,de.schildbach.wallet.ui.preference.PreferenceActivity.onOptionsItemSelected(android.view.MenuItem),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.ResolveDnsTask,de.schildbach.wallet.ui.preference.ResolveDnsTask.de.schildbach.wallet.ui.preference.ResolveDnsTask(android.os.Handler),Cross-Cutting
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.ResolveDnsTask,de.schildbach.wallet.ui.preference.ResolveDnsTask.resolve(java.lang.String),Data Source Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.SettingsFragment,de.schildbach.wallet.ui.preference.SettingsFragment.de.schildbach.wallet.ui.preference.SettingsFragment(),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.SettingsFragment,de.schildbach.wallet.ui.preference.SettingsFragment.onAttach(android.app.Activity),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.SettingsFragment,de.schildbach.wallet.ui.preference.SettingsFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.SettingsFragment,de.schildbach.wallet.ui.preference.SettingsFragment.onDestroy(),Presentation Layer
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.SettingsFragment,"de.schildbach.wallet.ui.preference.SettingsFragment.onPreferenceChange(android.preference.Preference,java.lang.Object)",Service Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,de.schildbach.wallet.ui.scan.CameraManager.buildLuminanceSource(byte[]),Data Source Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,de.schildbach.wallet.ui.scan.CameraManager.close(),Data Source Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,de.schildbach.wallet.ui.scan.CameraManager.de.schildbach.wallet.ui.scan.CameraManager(),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,de.schildbach.wallet.ui.scan.CameraManager.getFacing(),Data Source Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,de.schildbach.wallet.ui.scan.CameraManager.getFrame(),Cross-Cutting
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,de.schildbach.wallet.ui.scan.CameraManager.getFramePreview(),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,de.schildbach.wallet.ui.scan.CameraManager.getOrientation(),Data Source Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,"de.schildbach.wallet.ui.scan.CameraManager.open(android.view.TextureView,int)",Service Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,de.schildbach.wallet.ui.scan.CameraManager.requestPreviewFrame(android.hardware.Camera.PreviewCallback),Service Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,de.schildbach.wallet.ui.scan.CameraManager.setTorch(boolean),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,de.schildbach.wallet.ui.scan.ScanActivity.de.schildbach.wallet.ui.scan.ScanActivity(),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,de.schildbach.wallet.ui.scan.ScanActivity.handleResult(com.google.zxing.Result),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,de.schildbach.wallet.ui.scan.ScanActivity.onAttachedToWindow(),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,de.schildbach.wallet.ui.scan.ScanActivity.onBackPressed(),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,de.schildbach.wallet.ui.scan.ScanActivity.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,"de.schildbach.wallet.ui.scan.ScanActivity.onKeyDown(int,android.view.KeyEvent)",Service Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,"de.schildbach.wallet.ui.scan.ScanActivity.onRequestPermissionsResult(int,java.lang.String[],int[])",Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,"de.schildbach.wallet.ui.scan.ScanActivity.onSurfaceTextureAvailable(android.graphics.SurfaceTexture,int,int)",Service Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,de.schildbach.wallet.ui.scan.ScanActivity.onSurfaceTextureDestroyed(android.graphics.SurfaceTexture),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,"de.schildbach.wallet.ui.scan.ScanActivity.onSurfaceTextureSizeChanged(android.graphics.SurfaceTexture,int,int)",Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,de.schildbach.wallet.ui.scan.ScanActivity.onSurfaceTextureUpdated(android.graphics.SurfaceTexture),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,"de.schildbach.wallet.ui.scan.ScanActivity.startForResult(android.app.Activity,android.view.View,int)",Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,"de.schildbach.wallet.ui.scan.ScanActivity.startForResult(android.app.Activity,int)",Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,"de.schildbach.wallet.ui.scan.ScanActivity.startForResult(android.support.v4.app.Fragment,android.app.Activity,int)",Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity$AutoFocusRunnable,de.schildbach.wallet.ui.scan.ScanActivity$AutoFocusRunnable.de.schildbach.wallet.ui.scan.ScanActivity$AutoFocusRunnable(android.hardware.Camera),Cross-Cutting
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity$AutoFocusRunnable,de.schildbach.wallet.ui.scan.ScanActivity$AutoFocusRunnable.run(),Service Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity$WarnDialogFragment,de.schildbach.wallet.ui.scan.ScanActivity$WarnDialogFragment.de.schildbach.wallet.ui.scan.ScanActivity$WarnDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity$WarnDialogFragment,de.schildbach.wallet.ui.scan.ScanActivity$WarnDialogFragment.onCancel(android.content.DialogInterface),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity$WarnDialogFragment,de.schildbach.wallet.ui.scan.ScanActivity$WarnDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity$WarnDialogFragment,"de.schildbach.wallet.ui.scan.ScanActivity$WarnDialogFragment.show(android.support.v4.app.FragmentManager,int,java.lang.String)",Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanViewModel,de.schildbach.wallet.ui.scan.ScanViewModel.de.schildbach.wallet.ui.scan.ScanViewModel(),Service Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScannerView,de.schildbach.wallet.ui.scan.ScannerView.addDot(com.google.zxing.ResultPoint),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScannerView,"de.schildbach.wallet.ui.scan.ScannerView.de.schildbach.wallet.ui.scan.ScannerView(android.content.Context,android.util.AttributeSet)",Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScannerView,de.schildbach.wallet.ui.scan.ScannerView.onDraw(android.graphics.Canvas),Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScannerView,"de.schildbach.wallet.ui.scan.ScannerView.setFraming(android.graphics.Rect,android.graphics.RectF,int,int,boolean)",Presentation Layer
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScannerView,de.schildbach.wallet.ui.scan.ScannerView.setIsResult(boolean),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.DecodePrivateKeyTask,de.schildbach.wallet.ui.send.DecodePrivateKeyTask.de.schildbach.wallet.ui.send.DecodePrivateKeyTask(android.os.Handler),Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.DecodePrivateKeyTask,"de.schildbach.wallet.ui.send.DecodePrivateKeyTask.decodePrivateKey(org.bitcoinj.crypto.BIP38PrivateKey,java.lang.String)",Domain Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.DeriveKeyTask,"de.schildbach.wallet.ui.send.DeriveKeyTask.de.schildbach.wallet.ui.send.DeriveKeyTask(android.os.Handler,int)",Domain Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.DeriveKeyTask,"de.schildbach.wallet.ui.send.DeriveKeyTask.deriveKey(org.bitcoinj.wallet.Wallet,java.lang.String)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.MaintenanceDialogFragment,de.schildbach.wallet.ui.send.MaintenanceDialogFragment.de.schildbach.wallet.ui.send.MaintenanceDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.MaintenanceDialogFragment,de.schildbach.wallet.ui.send.MaintenanceDialogFragment.onAttach(android.content.Context),Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.MaintenanceDialogFragment,de.schildbach.wallet.ui.send.MaintenanceDialogFragment.onCreate(android.os.Bundle),Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.MaintenanceDialogFragment,de.schildbach.wallet.ui.send.MaintenanceDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.MaintenanceDialogFragment,de.schildbach.wallet.ui.send.MaintenanceDialogFragment.onDestroy(),Cross-Cutting
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.MaintenanceDialogFragment,de.schildbach.wallet.ui.send.MaintenanceDialogFragment.onDismiss(android.content.DialogInterface),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.MaintenanceDialogFragment,de.schildbach.wallet.ui.send.MaintenanceDialogFragment.onResume(),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.MaintenanceDialogFragment,de.schildbach.wallet.ui.send.MaintenanceDialogFragment.show(android.support.v4.app.FragmentManager),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment.de.schildbach.wallet.ui.send.RaiseFeeDialogFragment(),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment,"de.schildbach.wallet.ui.send.RaiseFeeDialogFragment.feeCanLikelyBeRaised(org.bitcoinj.wallet.Wallet,org.bitcoinj.core.Transaction)",Domain Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment.onCreate(android.os.Bundle),Domain Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment.onCreateDialog(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment.onDestroy(),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment.onDismiss(android.content.DialogInterface),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment,"de.schildbach.wallet.ui.send.RaiseFeeDialogFragment.show(android.support.v4.app.FragmentManager,org.bitcoinj.core.Transaction)",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment$ViewModel,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment$ViewModel.de.schildbach.wallet.ui.send.RaiseFeeDialogFragment$ViewModel(android.app.Application),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment$ViewModel,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment$ViewModel.getDynamicFees(),Data Source Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask,"de.schildbach.wallet.ui.send.RequestPaymentRequestTask.de.schildbach.wallet.ui.send.RequestPaymentRequestTask(android.os.Handler,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$ResultCallback)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask,de.schildbach.wallet.ui.send.RequestPaymentRequestTask.requestPaymentRequest(java.lang.String),Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$BluetoothRequestTask,"de.schildbach.wallet.ui.send.RequestPaymentRequestTask$BluetoothRequestTask.de.schildbach.wallet.ui.send.RequestPaymentRequestTask$BluetoothRequestTask(android.os.Handler,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$ResultCallback,android.bluetooth.BluetoothAdapter)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$BluetoothRequestTask,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$BluetoothRequestTask.requestPaymentRequest(java.lang.String),Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$HttpRequestTask,"de.schildbach.wallet.ui.send.RequestPaymentRequestTask$HttpRequestTask.de.schildbach.wallet.ui.send.RequestPaymentRequestTask$HttpRequestTask(android.os.Handler,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$ResultCallback,java.lang.String)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$HttpRequestTask,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$HttpRequestTask.requestPaymentRequest(java.lang.String),Data Source Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$ResultCallback,"de.schildbach.wallet.ui.send.RequestPaymentRequestTask$ResultCallback.onFail(int,java.lang.Object[])",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$ResultCallback,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$ResultCallback.onPaymentIntent(de.schildbach.wallet.data.PaymentIntent),Domain Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask,"de.schildbach.wallet.ui.send.RequestWalletBalanceTask.de.schildbach.wallet.ui.send.RequestWalletBalanceTask(android.os.Handler,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$ResultCallback)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask,"de.schildbach.wallet.ui.send.RequestWalletBalanceTask.requestWalletBalance(android.content.res.AssetManager,org.bitcoinj.core.Address)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$ElectrumServer,"de.schildbach.wallet.ui.send.RequestWalletBalanceTask$ElectrumServer.de.schildbach.wallet.ui.send.RequestWalletBalanceTask$ElectrumServer(java.lang.String,java.lang.String,java.lang.String,java.lang.String)",Data Source Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcRequest,"de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcRequest.de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcRequest(java.lang.String,java.lang.String[])",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcResponse,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcResponse.de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcResponse(),Cross-Cutting
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcResponse$Utxo,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcResponse$Utxo.de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcResponse$Utxo(),Domain Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$ResultCallback,"de.schildbach.wallet.ui.send.RequestWalletBalanceTask$ResultCallback.onFail(int,java.lang.Object[])",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$ResultCallback,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$ResultCallback.onResult(java.util.Set),Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsActivity,de.schildbach.wallet.ui.send.SendCoinsActivity.de.schildbach.wallet.ui.send.SendCoinsActivity(),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsActivity,de.schildbach.wallet.ui.send.SendCoinsActivity.onCreateOptionsMenu(android.view.Menu),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsActivity,de.schildbach.wallet.ui.send.SendCoinsActivity.onOptionsItemSelected(android.view.MenuItem),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsActivity,"de.schildbach.wallet.ui.send.SendCoinsActivity.start(android.content.Context,de.schildbach.wallet.data.PaymentIntent)",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsActivity,"de.schildbach.wallet.ui.send.SendCoinsActivity.start(android.content.Context,de.schildbach.wallet.data.PaymentIntent,de.schildbach.wallet.ui.send.FeeCategory,int)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsActivity,"de.schildbach.wallet.ui.send.SendCoinsActivity.startDonate(android.content.Context,org.bitcoinj.core.Coin,de.schildbach.wallet.ui.send.FeeCategory,int)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,de.schildbach.wallet.ui.send.SendCoinsFragment.de.schildbach.wallet.ui.send.SendCoinsFragment(),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,"de.schildbach.wallet.ui.send.SendCoinsFragment.onActivityResult(int,int,android.content.Intent)",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,de.schildbach.wallet.ui.send.SendCoinsFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,de.schildbach.wallet.ui.send.SendCoinsFragment.onCreate(android.os.Bundle),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,"de.schildbach.wallet.ui.send.SendCoinsFragment.onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater)",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,"de.schildbach.wallet.ui.send.SendCoinsFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,de.schildbach.wallet.ui.send.SendCoinsFragment.onDestroy(),Cross-Cutting
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,de.schildbach.wallet.ui.send.SendCoinsFragment.onDestroyView(),Domain Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,de.schildbach.wallet.ui.send.SendCoinsFragment.onDetach(),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,de.schildbach.wallet.ui.send.SendCoinsFragment.onOptionsItemSelected(android.view.MenuItem),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,de.schildbach.wallet.ui.send.SendCoinsFragment.onPause(),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,de.schildbach.wallet.ui.send.SendCoinsFragment.onPrepareOptionsMenu(android.view.Menu),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,de.schildbach.wallet.ui.send.SendCoinsFragment.onResume(),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener.afterTextChanged(android.text.Editable),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener,"de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener.beforeTextChanged(java.lang.CharSequence,int,int,int)",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener,"de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener.onFocusChange(android.view.View,boolean)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener,"de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener.onItemClick(android.widget.AdapterView,android.view.View,int,long)",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener,"de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener.onTextChanged(java.lang.CharSequence,int,int,int)",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressViewAdapter,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressViewAdapter.de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressViewAdapter(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressViewAdapter,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressViewAdapter.getFilter(),Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressViewAdapter,"de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressViewAdapter.getView(int,android.view.View,android.view.ViewGroup)",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsOfflineTask,"de.schildbach.wallet.ui.send.SendCoinsOfflineTask.de.schildbach.wallet.ui.send.SendCoinsOfflineTask(org.bitcoinj.wallet.Wallet,android.os.Handler)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsOfflineTask,de.schildbach.wallet.ui.send.SendCoinsOfflineTask.sendCoinsOffline(org.bitcoinj.wallet.SendRequest),Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsViewModel,de.schildbach.wallet.ui.send.SendCoinsViewModel.de.schildbach.wallet.ui.send.SendCoinsViewModel(android.app.Application),Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletActivity,de.schildbach.wallet.ui.send.SweepWalletActivity.de.schildbach.wallet.ui.send.SweepWalletActivity(),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletActivity,de.schildbach.wallet.ui.send.SweepWalletActivity.onCreate(android.os.Bundle),Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletActivity,de.schildbach.wallet.ui.send.SweepWalletActivity.start(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletActivity,"de.schildbach.wallet.ui.send.SweepWalletActivity.start(android.content.Context,org.bitcoinj.core.VersionedChecksummedBytes)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment,de.schildbach.wallet.ui.send.SweepWalletFragment.de.schildbach.wallet.ui.send.SweepWalletFragment(),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment,"de.schildbach.wallet.ui.send.SweepWalletFragment.onActivityResult(int,int,android.content.Intent)",Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment,de.schildbach.wallet.ui.send.SweepWalletFragment.onAttach(android.content.Context),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment,de.schildbach.wallet.ui.send.SweepWalletFragment.onCreate(android.os.Bundle),Service Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment,"de.schildbach.wallet.ui.send.SweepWalletFragment.onCreateOptionsMenu(android.view.Menu,android.view.MenuInflater)",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment,"de.schildbach.wallet.ui.send.SweepWalletFragment.onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle)",Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment,de.schildbach.wallet.ui.send.SweepWalletFragment.onDestroy(),Cross-Cutting
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment,de.schildbach.wallet.ui.send.SweepWalletFragment.onOptionsItemSelected(android.view.MenuItem),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment$FakeTransaction,"de.schildbach.wallet.ui.send.SweepWalletFragment$FakeTransaction.de.schildbach.wallet.ui.send.SweepWalletFragment$FakeTransaction(org.bitcoinj.core.NetworkParameters,org.bitcoinj.core.Sha256Hash)",Domain Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment$FakeTransaction,de.schildbach.wallet.ui.send.SweepWalletFragment$FakeTransaction.getHash(),Domain Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment$ViewModel,de.schildbach.wallet.ui.send.SweepWalletFragment$ViewModel.de.schildbach.wallet.ui.send.SweepWalletFragment$ViewModel(android.app.Application),Presentation Layer
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment$ViewModel,de.schildbach.wallet.ui.send.SweepWalletFragment$ViewModel.getDynamicFees(),Service Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Base43,de.schildbach.wallet.util.Base43.de.schildbach.wallet.util.Base43(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Base43,de.schildbach.wallet.util.Base43.decode(java.lang.String),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Base43,de.schildbach.wallet.util.Base43.encode(byte[]),Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Base43Test,de.schildbach.wallet.util.Base43Test.de.schildbach.wallet.util.Base43Test(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Base43Test,de.schildbach.wallet.util.Base43Test.decode(),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Base43Test,de.schildbach.wallet.util.Base43Test.encode(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Bluetooth,de.schildbach.wallet.util.Bluetooth.compressMac(java.lang.String),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Bluetooth,de.schildbach.wallet.util.Bluetooth.de.schildbach.wallet.util.Bluetooth(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Bluetooth,de.schildbach.wallet.util.Bluetooth.decompressMac(java.lang.String),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Bluetooth,de.schildbach.wallet.util.Bluetooth.getAddress(android.bluetooth.BluetoothAdapter),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Bluetooth,de.schildbach.wallet.util.Bluetooth.getBluetoothMac(java.lang.String),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Bluetooth,de.schildbach.wallet.util.Bluetooth.getBluetoothQuery(java.lang.String),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Bluetooth,de.schildbach.wallet.util.Bluetooth.isBluetoothUrl(java.lang.String),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.BluetoothTest,de.schildbach.wallet.util.BluetoothTest.compressDecompressMac(),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.BluetoothTest,de.schildbach.wallet.util.BluetoothTest.de.schildbach.wallet.util.BluetoothTest(),Service Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.BluetoothTest,de.schildbach.wallet.util.BluetoothTest.getBluetooth(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.BluetoothTest,de.schildbach.wallet.util.BluetoothTest.isBluetoothUri(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.CheatSheet,de.schildbach.wallet.util.CheatSheet.de.schildbach.wallet.util.CheatSheet(),Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CheatSheet,de.schildbach.wallet.util.CheatSheet.remove(android.view.View),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CheatSheet,de.schildbach.wallet.util.CheatSheet.setup(android.view.View),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CheatSheet,"de.schildbach.wallet.util.CheatSheet.setup(android.view.View,int)",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CheatSheet,"de.schildbach.wallet.util.CheatSheet.setup(android.view.View,java.lang.CharSequence)",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter,"de.schildbach.wallet.util.CrashReporter.appendInstalledPackages(java.lang.Appendable,android.content.Context)",Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter,de.schildbach.wallet.util.CrashReporter.appendSavedCrashTrace(java.lang.Appendable),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter,de.schildbach.wallet.util.CrashReporter.collectSavedBackgroundTraces(java.io.File),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter,de.schildbach.wallet.util.CrashReporter.de.schildbach.wallet.util.CrashReporter(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter,de.schildbach.wallet.util.CrashReporter.deleteSaveCrashTrace(),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter,de.schildbach.wallet.util.CrashReporter.hasSavedCrashTrace(),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter,de.schildbach.wallet.util.CrashReporter.init(java.io.File),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter,"de.schildbach.wallet.util.CrashReporter.saveBackgroundTrace(java.lang.Throwable,android.content.pm.PackageInfo)",Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter$ExceptionHandler,de.schildbach.wallet.util.CrashReporter$ExceptionHandler.de.schildbach.wallet.util.CrashReporter$ExceptionHandler(java.lang.Thread$UncaughtExceptionHandler),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter$ExceptionHandler,"de.schildbach.wallet.util.CrashReporter$ExceptionHandler.uncaughtException(java.lang.Thread,java.lang.Throwable)",Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Crypto,de.schildbach.wallet.util.Crypto.de.schildbach.wallet.util.Crypto(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Crypto,"de.schildbach.wallet.util.Crypto.decrypt(java.lang.String,char[])",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Crypto,"de.schildbach.wallet.util.Crypto.decryptBytes(java.lang.String,char[])",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Crypto,"de.schildbach.wallet.util.Crypto.encrypt(byte[],char[])",Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Crypto,"de.schildbach.wallet.util.Crypto.encrypt(java.lang.String,char[])",Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CryptoTest,de.schildbach.wallet.util.CryptoTest.backups(),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CryptoTest,de.schildbach.wallet.util.CryptoTest.de.schildbach.wallet.util.CryptoTest(),Service Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CryptoTest,de.schildbach.wallet.util.CryptoTest.roundtripBytes(),Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CryptoTest,de.schildbach.wallet.util.CryptoTest.roundtripDifferentByteSizes(),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CryptoTest,de.schildbach.wallet.util.CryptoTest.roundtripDifferentPasswordSizes(),Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.CryptoTest,de.schildbach.wallet.util.CryptoTest.roundtripDifferentTextSizes(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.CryptoTest,de.schildbach.wallet.util.CryptoTest.roundtripText(),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Formats,de.schildbach.wallet.util.Formats.de.schildbach.wallet.util.Formats(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Formats,de.schildbach.wallet.util.Formats.sanitizeMemo(java.lang.String),Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.FormatsTest,de.schildbach.wallet.util.FormatsTest.de.schildbach.wallet.util.FormatsTest(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.FormatsTest,de.schildbach.wallet.util.FormatsTest.monetarySpannable(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.GenericUtils,de.schildbach.wallet.util.GenericUtils.currencySymbol(java.lang.String),Service Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.GenericUtils,de.schildbach.wallet.util.GenericUtils.de.schildbach.wallet.util.GenericUtils(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.GenericUtils,"de.schildbach.wallet.util.GenericUtils.startsWithIgnoreCase(java.lang.String,java.lang.String)",Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Io,"de.schildbach.wallet.util.Io.copy(java.io.InputStream,java.io.OutputStream)",Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Io,"de.schildbach.wallet.util.Io.copy(java.io.Reader,java.lang.StringBuilder)",Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Io,"de.schildbach.wallet.util.Io.copy(java.io.Reader,java.lang.StringBuilder,long)",Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Io,de.schildbach.wallet.util.Io.de.schildbach.wallet.util.Io(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Iso8601Format,de.schildbach.wallet.util.Iso8601Format.formatDateTime(java.util.Date),Service Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Iso8601Format,de.schildbach.wallet.util.Iso8601Format.formatDateTimeT(java.util.Date),Utility Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Iso8601Format,de.schildbach.wallet.util.Iso8601Format.newDateFormat(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Iso8601Format,de.schildbach.wallet.util.Iso8601Format.newDateTimeFormat(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Iso8601Format,de.schildbach.wallet.util.Iso8601Format.newDateTimeFormatT(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Iso8601Format,de.schildbach.wallet.util.Iso8601Format.newTimeFormat(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Iso8601Format,de.schildbach.wallet.util.Iso8601Format.parseDateTime(java.lang.String),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Iso8601Format,de.schildbach.wallet.util.Iso8601Format.parseDateTimeT(java.lang.String),Service Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.MonetarySpannable,"de.schildbach.wallet.util.MonetarySpannable.applyMarkup(android.text.Spannable,java.lang.Object[],java.lang.Object[],java.lang.Object[])",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.MonetarySpannable,"de.schildbach.wallet.util.MonetarySpannable.applyMarkup(java.lang.Object[],java.lang.Object[])",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.MonetarySpannable,"de.schildbach.wallet.util.MonetarySpannable.de.schildbach.wallet.util.MonetarySpannable(org.bitcoinj.utils.MonetaryFormat,boolean,org.bitcoinj.core.Monetary)",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.MonetarySpannable,"de.schildbach.wallet.util.MonetarySpannable.de.schildbach.wallet.util.MonetarySpannable(org.bitcoinj.utils.MonetaryFormat,org.bitcoinj.core.Monetary)",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Nfc,"de.schildbach.wallet.util.Nfc.createMime(java.lang.String,byte[])",Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Nfc,de.schildbach.wallet.util.Nfc.de.schildbach.wallet.util.Nfc(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.Nfc,"de.schildbach.wallet.util.Nfc.extractMimePayload(java.lang.String,android.nfc.NdefMessage)",Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.OnFirstPreDraw,"de.schildbach.wallet.util.OnFirstPreDraw.listen(android.view.View,de.schildbach.wallet.util.OnFirstPreDraw$Callback)",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.OnFirstPreDraw,de.schildbach.wallet.util.OnFirstPreDraw.onPreDraw(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.OnFirstPreDraw$Callback,de.schildbach.wallet.util.OnFirstPreDraw$Callback.onFirstPreDraw(),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Qr,de.schildbach.wallet.util.Qr.bitmap(java.lang.String),Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Qr,de.schildbach.wallet.util.Qr.de.schildbach.wallet.util.Qr(),Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Qr,de.schildbach.wallet.util.Qr.decodeBinary(java.lang.String),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Qr,de.schildbach.wallet.util.Qr.decodeDecompressBinary(java.lang.String),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Qr,de.schildbach.wallet.util.Qr.encodeBinary(byte[]),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Qr,de.schildbach.wallet.util.Qr.encodeCompressBinary(byte[]),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Toast,de.schildbach.wallet.util.Toast.de.schildbach.wallet.util.Toast(android.content.Context),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Toast,"de.schildbach.wallet.util.Toast.longToast(int,java.lang.Object[])",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Toast,de.schildbach.wallet.util.Toast.longToast(java.lang.CharSequence),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Toast,"de.schildbach.wallet.util.Toast.postLongToast(int,java.lang.Object[])",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Toast,de.schildbach.wallet.util.Toast.postLongToast(java.lang.CharSequence),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Toast,"de.schildbach.wallet.util.Toast.postToast(int,java.lang.Object[])",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Toast,de.schildbach.wallet.util.Toast.postToast(java.lang.CharSequence),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Toast,"de.schildbach.wallet.util.Toast.toast(int,java.lang.Object[])",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.Toast,de.schildbach.wallet.util.Toast.toast(java.lang.CharSequence),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.ViewPagerTabs,de.schildbach.wallet.util.ViewPagerTabs.addTabLabels(int[]),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.ViewPagerTabs,"de.schildbach.wallet.util.ViewPagerTabs.de.schildbach.wallet.util.ViewPagerTabs(android.content.Context,android.util.AttributeSet)",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.ViewPagerTabs,de.schildbach.wallet.util.ViewPagerTabs.onPageScrollStateChanged(int),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.ViewPagerTabs,"de.schildbach.wallet.util.ViewPagerTabs.onPageScrolled(int,float,int)",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.ViewPagerTabs,de.schildbach.wallet.util.ViewPagerTabs.onPageSelected(int),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.ViewPagerTabs,de.schildbach.wallet.util.ViewPagerTabs.onRestoreInstanceState(android.os.Parcelable),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.ViewPagerTabs,de.schildbach.wallet.util.ViewPagerTabs.onSaveInstanceState(),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.autoBackupWallet(android.content.Context,org.bitcoinj.wallet.Wallet)",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,de.schildbach.wallet.util.WalletUtils.de.schildbach.wallet.util.WalletUtils(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.formatAddress(java.lang.String,org.bitcoinj.core.Address,int,int)",Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.formatAddress(org.bitcoinj.core.Address,int,int)",Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.formatHash(java.lang.String,int,int)",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.formatHash(java.lang.String,java.lang.String,int,int,char)",Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.getToAddressOfSent(org.bitcoinj.core.Transaction,org.bitcoinj.wallet.Wallet)",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.getWalletAddressOfReceived(org.bitcoinj.core.Transaction,org.bitcoinj.wallet.Wallet)",Service Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.isEntirelySelf(org.bitcoinj.core.Transaction,org.bitcoinj.wallet.Wallet)",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,de.schildbach.wallet.util.WalletUtils.isPayToManyTransaction(org.bitcoinj.core.Transaction),Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,de.schildbach.wallet.util.WalletUtils.longHash(org.bitcoinj.core.Sha256Hash),Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.readKeys(java.io.BufferedReader,org.bitcoinj.core.NetworkParameters)",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.restorePrivateKeysFromBase58(java.io.InputStream,org.bitcoinj.core.NetworkParameters)",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,de.schildbach.wallet.util.WalletUtils.restoreWalletFromAutoBackup(android.content.Context),Service Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.restoreWalletFromProtobuf(java.io.InputStream,org.bitcoinj.core.NetworkParameters)",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.restoreWalletFromProtobufOrBase58(java.io.InputStream,org.bitcoinj.core.NetworkParameters)",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,de.schildbach.wallet.util.WalletUtils.walletFromByteArray(byte[]),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,de.schildbach.wallet.util.WalletUtils.walletToByteArray(org.bitcoinj.wallet.Wallet),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,"de.schildbach.wallet.util.WalletUtils.writeKeys(java.io.Writer,java.util.List)",Domain Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils$MonospaceSpan,de.schildbach.wallet.util.WalletUtils$MonospaceSpan.de.schildbach.wallet.util.WalletUtils$MonospaceSpan(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils$MonospaceSpan,de.schildbach.wallet.util.WalletUtils$MonospaceSpan.equals(java.lang.Object),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils$MonospaceSpan,de.schildbach.wallet.util.WalletUtils$MonospaceSpan.hashCode(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtilsTest,de.schildbach.wallet.util.WalletUtilsTest.de.schildbach.wallet.util.WalletUtilsTest(),Cross-Cutting
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtilsTest,de.schildbach.wallet.util.WalletUtilsTest.restoreWalletFromBase58_wrongNetwork(),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtilsTest,de.schildbach.wallet.util.WalletUtilsTest.restoreWalletFromProtobufOrBase58(),Service Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtilsTest,de.schildbach.wallet.util.WalletUtilsTest.restoreWalletFromProtobuf_wrongNetwork(),Data Source Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WholeStringBuilder,de.schildbach.wallet.util.WholeStringBuilder.bold(java.lang.CharSequence),Presentation Layer
+de.schildbach.wallet.util,de.schildbach.wallet.util.WholeStringBuilder,"de.schildbach.wallet.util.WholeStringBuilder.de.schildbach.wallet.util.WholeStringBuilder(java.lang.CharSequence,java.lang.Object)",Cross-Cutting

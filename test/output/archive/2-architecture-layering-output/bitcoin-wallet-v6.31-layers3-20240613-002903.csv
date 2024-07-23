@@ -1,0 +1,355 @@
+package,class,layer,count
+de.schildbach.wallet,de.schildbach.wallet.Configuration,Data Source Layer,0.5714285714285714
+de.schildbach.wallet,de.schildbach.wallet.Configuration,Service Layer,0.17142857142857143
+de.schildbach.wallet,de.schildbach.wallet.Configuration,Domain Layer,0.2
+de.schildbach.wallet,de.schildbach.wallet.Configuration,Cross-Cutting,0.05714285714285714
+de.schildbach.wallet,de.schildbach.wallet.Constants,Cross-Cutting,1.0
+de.schildbach.wallet,de.schildbach.wallet.Constants$Files,Domain Layer,1.0
+de.schildbach.wallet,de.schildbach.wallet.Logging,Cross-Cutting,0.5
+de.schildbach.wallet,de.schildbach.wallet.Logging,Data Source Layer,0.5
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,Cross-Cutting,0.4
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,Data Source Layer,0.26666666666666666
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication,Service Layer,0.3333333333333333
+de.schildbach.wallet,de.schildbach.wallet.WalletApplication$OnWalletLoadedListener,Domain Layer,1.0
+de.schildbach.wallet,de.schildbach.wallet.WalletBalanceWidgetProvider,Service Layer,0.25
+de.schildbach.wallet,de.schildbach.wallet.WalletBalanceWidgetProvider,Presentation Layer,0.75
+de.schildbach.wallet.data,de.schildbach.wallet.data.AbstractWalletLiveData,Service Layer,0.5
+de.schildbach.wallet.data,de.schildbach.wallet.data.AbstractWalletLiveData,Data Source Layer,0.5
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookDao,Data Source Layer,1.0
+de.schildbach.wallet.data,de.schildbach.wallet.data.AddressBookEntry,Domain Layer,1.0
+de.schildbach.wallet.data,de.schildbach.wallet.data.AppDatabase,Data Source Layer,1.0
+de.schildbach.wallet.data,de.schildbach.wallet.data.BlockchainStateLiveData,Data Source Layer,0.3333333333333333
+de.schildbach.wallet.data,de.schildbach.wallet.data.BlockchainStateLiveData,Service Layer,0.3333333333333333
+de.schildbach.wallet.data,de.schildbach.wallet.data.BlockchainStateLiveData,Cross-Cutting,0.3333333333333333
+de.schildbach.wallet.data,de.schildbach.wallet.data.ConfigFormatLiveData,Data Source Layer,0.5
+de.schildbach.wallet.data,de.schildbach.wallet.data.ConfigFormatLiveData,Service Layer,0.5
+de.schildbach.wallet.data,de.schildbach.wallet.data.ConfigOwnNameLiveData,Data Source Layer,0.5
+de.schildbach.wallet.data,de.schildbach.wallet.data.ConfigOwnNameLiveData,Service Layer,0.5
+de.schildbach.wallet.data,de.schildbach.wallet.data.DynamicFeeLiveData,Data Source Layer,1.0
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRate,Domain Layer,1.0
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRatesProvider,Data Source Layer,0.7777777777777778
+de.schildbach.wallet.data,de.schildbach.wallet.data.ExchangeRatesProvider,Service Layer,0.2222222222222222
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,Domain Layer,0.8333333333333334
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,Cross-Cutting,0.1
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent,Service Layer,0.06666666666666667
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent$Output,Domain Layer,0.6666666666666666
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent$Output,Cross-Cutting,0.16666666666666666
+de.schildbach.wallet.data,de.schildbach.wallet.data.PaymentIntent$Output,Data Source Layer,0.16666666666666666
+de.schildbach.wallet.data,de.schildbach.wallet.data.SelectedExchangeRateLiveData,Service Layer,1.0
+de.schildbach.wallet.data,de.schildbach.wallet.data.SingleLiveEvent,Cross-Cutting,0.4
+de.schildbach.wallet.data,de.schildbach.wallet.data.SingleLiveEvent,Service Layer,0.4
+de.schildbach.wallet.data,de.schildbach.wallet.data.SingleLiveEvent,Domain Layer,0.2
+de.schildbach.wallet.data,de.schildbach.wallet.data.ThrottelingLiveData,Cross-Cutting,1.0
+de.schildbach.wallet.data,de.schildbach.wallet.data.TimeLiveData,Data Source Layer,1.0
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletBalanceLiveData,Domain Layer,0.3333333333333333
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletBalanceLiveData,Data Source Layer,0.6666666666666666
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletBalanceLiveData$WalletListener,Service Layer,1.0
+de.schildbach.wallet.data,de.schildbach.wallet.data.WalletLiveData,Cross-Cutting,1.0
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,Cross-Cutting,0.08333333333333333
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,Domain Layer,0.08333333333333333
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,Data Source Layer,0.3333333333333333
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,Service Layer,0.4166666666666667
+de.schildbach.wallet.integration.android,de.schildbach.wallet.integration.android.BitcoinIntegration,Presentation Layer,0.08333333333333333
+de.schildbach.wallet.integration.sample,de.schildbach.wallet.integration.sample.SampleActivity,Presentation Layer,1.0
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothService,Service Layer,1.0
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothThread,Data Source Layer,1.0
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothThread$ClassicBluetoothThread,Data Source Layer,0.5
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothThread$ClassicBluetoothThread,Domain Layer,0.5
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.AcceptBluetoothThread$PaymentProtocolThread,Service Layer,1.0
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask,Service Layer,1.0
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask$BluetoothPaymentTask,Service Layer,1.0
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask$HttpPaymentTask,Service Layer,1.0
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask$ResultCallback,Presentation Layer,0.5
+de.schildbach.wallet.offline,de.schildbach.wallet.offline.DirectPaymentTask$ResultCallback,Service Layer,0.5
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,Service Layer,0.9333333333333333
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService,Domain Layer,0.06666666666666667
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$ImpedimentsLiveData,Service Layer,1.0
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$LocalBinder,Service Layer,1.0
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$NewTransactionLiveData,Service Layer,1.0
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$NewTransactionLiveData$WalletListener,Presentation Layer,1.0
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainService$PeerConnectivityListener,Service Layer,1.0
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainState,Domain Layer,0.6666666666666666
+de.schildbach.wallet.service,de.schildbach.wallet.service.BlockchainState,Service Layer,0.3333333333333333
+de.schildbach.wallet.service,de.schildbach.wallet.service.BootstrapReceiver,Cross-Cutting,0.5
+de.schildbach.wallet.service,de.schildbach.wallet.service.BootstrapReceiver,Service Layer,0.5
+de.schildbach.wallet.service,de.schildbach.wallet.service.InactivityNotificationService,Service Layer,1.0
+de.schildbach.wallet.service,de.schildbach.wallet.service.UpgradeWalletService,Service Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AbstractWalletActivity,Service Layer,0.2
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AbstractWalletActivity,Cross-Cutting,0.2
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AbstractWalletActivity,Presentation Layer,0.6
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressAndLabel,Domain Layer,0.7142857142857143
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressAndLabel,Cross-Cutting,0.14285714285714285
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressAndLabel,Presentation Layer,0.14285714285714285
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter,Presentation Layer,0.8571428571428571
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AddressBookActivity$TwoFragmentAdapter,Service Layer,0.14285714285714285
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AlertDialogsFragment,Presentation Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AlertDialogsFragment,Data Source Layer,0.16666666666666666
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.AlertDialogsFragment,Service Layer,0.3333333333333333
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.BitmapFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CircularProgressView,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,Presentation Layer,0.9411764705882353
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView,Domain Layer,0.058823529411764705
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView$Listener,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyAmountView$TextViewListener,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,Presentation Layer,0.5384615384615384
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,Service Layer,0.3076923076923077
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,Data Source Layer,0.07692307692307693
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyCalculatorLink,Domain Layer,0.07692307692307693
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencySymbolDrawable,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.CurrencyTextView,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DialogBuilder,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.DividerItemDecoration,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EditAddressBookEntryFragment,Presentation Layer,0.6666666666666666
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EditAddressBookEntryFragment,Service Layer,0.3333333333333333
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EncryptKeysDialogFragment,Presentation Layer,0.625
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.EncryptKeysDialogFragment,Service Layer,0.375
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesActivity,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter,Domain Layer,0.25
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter,Presentation Layer,0.75
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter$ListItem,Domain Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter$OnClickListener,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesAdapter$ViewHolder,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment,Presentation Layer,0.75
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment,Service Layer,0.25
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment$ExchangeRatesLiveData,Data Source Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment$ExchangeRatesLiveData,Presentation Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment$ViewModel,Service Layer,0.25
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ExchangeRatesFragment$ViewModel,Data Source Layer,0.75
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.FancyListFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.HelpDialogFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser,Cross-Cutting,0.3333333333333333
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser,Service Layer,0.3333333333333333
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser,Domain Layer,0.3333333333333333
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$BinaryInputParser,Cross-Cutting,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$BinaryInputParser,Service Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$StreamInputParser,Data Source Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$StreamInputParser,Service Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$StringInputParser,Cross-Cutting,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.InputParser$StringInputParser,Domain Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.MaybeMaintenanceFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.MaybeMaintenanceViewModel,Presentation Layer,0.3333333333333333
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.MaybeMaintenanceViewModel,Cross-Cutting,0.6666666666666666
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.MaybeMaintenanceViewModel$WalletMaintenanceRecommendedLiveData,Data Source Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ProgressDialogFragment,Presentation Layer,0.8333333333333334
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ProgressDialogFragment,Service Layer,0.16666666666666666
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogBuilder,Presentation Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogBuilder,Service Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogFragment,Presentation Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogFragment,Service Layer,0.3333333333333333
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueDialogFragment,Cross-Cutting,0.16666666666666666
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ReportIssueViewModel,Service Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsActivity,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,Presentation Layer,0.7692307692307693
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,Service Layer,0.15384615384615385
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsFragment,Domain Layer,0.07692307692307693
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsViewModel,Domain Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsViewModel$FreshReceiveAddressLiveData,Service Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.RequestCoinsViewModel$FreshReceiveAddressLiveData,Domain Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendCoinsQrActivity,Presentation Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendCoinsQrActivity,Service Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesFragment,Presentation Layer,0.75
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesFragment,Service Layer,0.125
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesFragment,Data Source Layer,0.125
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesViewModel,Data Source Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesViewModel$AddressesToExcludeLiveData,Domain Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesViewModel$ClipLiveData,Data Source Layer,0.6666666666666666
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.SendingAddressesViewModel$ClipLiveData,Service Layer,0.3333333333333333
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.ShowPasswordCheckListener,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.StickToTopLinearLayoutManager,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$ItemAnimator,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$ListItem,Domain Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$ListItem$TransactionItem,Domain Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$ListItem$WarningItem,Domain Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$OnClickListener,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.TransactionsAdapter$TransactionViewHolder,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActionsFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,Presentation Layer,0.9090909090909091
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletActivity,Service Layer,0.09090909090909091
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressDialogFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressFragment,Presentation Layer,0.75
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressFragment,Data Source Layer,0.25
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressViewModel,Domain Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData,Domain Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData$WalletListener,Domain Layer,0.25
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressViewModel$CurrentAddressLiveData$WalletListener,Service Layer,0.75
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,Presentation Layer,0.8333333333333334
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesAdapter,Domain Layer,0.16666666666666666
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesFragment,Presentation Layer,0.8333333333333334
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesFragment,Service Layer,0.16666666666666666
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesViewModel,Service Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesViewModel$ImportedKeysLiveData,Service Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesViewModel$IssuedReceiveKeysLiveData,Cross-Cutting,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletAddressesViewModel$IssuedReceiveKeysLiveData,Service Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment$ViewModel,Service Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletBalanceFragment$ViewModel,Data Source Layer,0.5
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment$DisclaimerEnabledLiveData,Service Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment$ViewModel,Presentation Layer,0.3333333333333333
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment$ViewModel,Service Layer,0.3333333333333333
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletDisclaimerFragment$ViewModel,Domain Layer,0.3333333333333333
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel,Service Layer,0.4
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel,Domain Layer,0.2
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel,Presentation Layer,0.4
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsConfidenceLiveData,Domain Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData,Service Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletTransactionsViewModel$TransactionsLiveData$WalletListener,Service Layer,1.0
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletViewModel,Service Layer,0.5714285714285714
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletViewModel,Presentation Layer,0.42857142857142855
+de.schildbach.wallet.ui,de.schildbach.wallet.ui.WalletViewModel$WalletEncryptedLiveData,Service Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment,Presentation Layer,0.8571428571428571
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment,Service Layer,0.14285714285714285
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$ErrorDialogFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletDialogFragment$SuccessDialogFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.BackupWalletViewModel,Service Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.FileAdapter,Presentation Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.ImportDialogButtonEnablerListener,Presentation Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$FailureDialogFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$PermissionDeniedDialogFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletDialogFragment$SuccessDialogFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalActivity,Presentation Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment,Presentation Layer,0.6
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment,Service Layer,0.4
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$FailureDialogFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletFromExternalDialogFragment$SuccessDialogFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.backup,de.schildbach.wallet.ui.backup.RestoreWalletViewModel,Service Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListAdapter,Presentation Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListAdapter$ListItem,Presentation Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListAdapter$ListItem$ListTransaction,Service Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListAdapter$OnClickListener,Presentation Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment$BlocksLiveData,Service Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel,Service Layer,0.8
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.BlockListFragment$ViewModel,Domain Layer,0.2
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.NetworkMonitorActivity,Presentation Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.NetworkMonitorActivity$PagerAdapter,Presentation Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListAdapter,Presentation Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListAdapter$ListItem,Domain Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment,Presentation Layer,0.5
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment,Cross-Cutting,0.25
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment,Service Layer,0.25
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$HostnamesLiveData,Cross-Cutting,0.5
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$HostnamesLiveData,Service Layer,0.5
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$PeersLiveData,Service Layer,1.0
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$ViewModel,Service Layer,0.3333333333333333
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$ViewModel,Presentation Layer,0.3333333333333333
+de.schildbach.wallet.ui.monitor,de.schildbach.wallet.ui.monitor.PeerListFragment$ViewModel,Domain Layer,0.3333333333333333
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.AboutFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.DiagnosticsFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.ExtendedPublicKeyFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.PreferenceActivity,Presentation Layer,1.0
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.ResolveDnsTask,Cross-Cutting,0.5
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.ResolveDnsTask,Data Source Layer,0.5
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.SettingsFragment,Presentation Layer,0.8
+de.schildbach.wallet.ui.preference,de.schildbach.wallet.ui.preference.SettingsFragment,Service Layer,0.2
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,Data Source Layer,0.4
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,Presentation Layer,0.3
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,Cross-Cutting,0.1
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.CameraManager,Service Layer,0.2
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,Presentation Layer,0.8571428571428571
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity,Service Layer,0.14285714285714285
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity$AutoFocusRunnable,Cross-Cutting,0.5
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity$AutoFocusRunnable,Service Layer,0.5
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanActivity$WarnDialogFragment,Presentation Layer,1.0
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScanViewModel,Service Layer,1.0
+de.schildbach.wallet.ui.scan,de.schildbach.wallet.ui.scan.ScannerView,Presentation Layer,1.0
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.DecodePrivateKeyTask,Service Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.DecodePrivateKeyTask,Domain Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.DeriveKeyTask,Domain Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.DeriveKeyTask,Service Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.MaintenanceDialogFragment,Presentation Layer,0.625
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.MaintenanceDialogFragment,Service Layer,0.25
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.MaintenanceDialogFragment,Cross-Cutting,0.125
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment,Presentation Layer,0.75
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment,Domain Layer,0.25
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment$ViewModel,Presentation Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RaiseFeeDialogFragment$ViewModel,Data Source Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask,Service Layer,1.0
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$BluetoothRequestTask,Service Layer,1.0
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$HttpRequestTask,Service Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$HttpRequestTask,Data Source Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$ResultCallback,Presentation Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestPaymentRequestTask$ResultCallback,Domain Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask,Service Layer,1.0
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$ElectrumServer,Data Source Layer,1.0
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcRequest,Service Layer,1.0
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcResponse,Cross-Cutting,1.0
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$JsonRpcResponse$Utxo,Domain Layer,1.0
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$ResultCallback,Presentation Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.RequestWalletBalanceTask$ResultCallback,Service Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsActivity,Presentation Layer,0.6666666666666666
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsActivity,Service Layer,0.3333333333333333
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,Presentation Layer,0.8461538461538461
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,Cross-Cutting,0.07692307692307693
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment,Domain Layer,0.07692307692307693
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener,Presentation Layer,0.8
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressListener,Service Layer,0.2
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressViewAdapter,Presentation Layer,0.6666666666666666
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsFragment$ReceivingAddressViewAdapter,Service Layer,0.3333333333333333
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsOfflineTask,Service Layer,1.0
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SendCoinsViewModel,Service Layer,1.0
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletActivity,Presentation Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletActivity,Service Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment,Presentation Layer,0.625
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment,Service Layer,0.25
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment,Cross-Cutting,0.125
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment$FakeTransaction,Domain Layer,1.0
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment$ViewModel,Presentation Layer,0.5
+de.schildbach.wallet.ui.send,de.schildbach.wallet.ui.send.SweepWalletFragment$ViewModel,Service Layer,0.5
+de.schildbach.wallet.util,de.schildbach.wallet.util.Base43,Cross-Cutting,0.6666666666666666
+de.schildbach.wallet.util,de.schildbach.wallet.util.Base43,Domain Layer,0.3333333333333333
+de.schildbach.wallet.util,de.schildbach.wallet.util.Base43Test,Cross-Cutting,0.6666666666666666
+de.schildbach.wallet.util,de.schildbach.wallet.util.Base43Test,Data Source Layer,0.3333333333333333
+de.schildbach.wallet.util,de.schildbach.wallet.util.Bluetooth,Cross-Cutting,0.5714285714285714
+de.schildbach.wallet.util,de.schildbach.wallet.util.Bluetooth,Data Source Layer,0.42857142857142855
+de.schildbach.wallet.util,de.schildbach.wallet.util.BluetoothTest,Data Source Layer,0.25
+de.schildbach.wallet.util,de.schildbach.wallet.util.BluetoothTest,Service Layer,0.25
+de.schildbach.wallet.util,de.schildbach.wallet.util.BluetoothTest,Cross-Cutting,0.5
+de.schildbach.wallet.util,de.schildbach.wallet.util.CheatSheet,Domain Layer,0.2
+de.schildbach.wallet.util,de.schildbach.wallet.util.CheatSheet,Presentation Layer,0.8
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter,Data Source Layer,0.875
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter,Cross-Cutting,0.125
+de.schildbach.wallet.util,de.schildbach.wallet.util.CrashReporter$ExceptionHandler,Cross-Cutting,1.0
+de.schildbach.wallet.util,de.schildbach.wallet.util.Crypto,Cross-Cutting,0.2
+de.schildbach.wallet.util,de.schildbach.wallet.util.Crypto,Domain Layer,0.4
+de.schildbach.wallet.util,de.schildbach.wallet.util.Crypto,Data Source Layer,0.4
+de.schildbach.wallet.util,de.schildbach.wallet.util.CryptoTest,Data Source Layer,0.42857142857142855
+de.schildbach.wallet.util,de.schildbach.wallet.util.CryptoTest,Service Layer,0.14285714285714285
+de.schildbach.wallet.util,de.schildbach.wallet.util.CryptoTest,Domain Layer,0.2857142857142857
+de.schildbach.wallet.util,de.schildbach.wallet.util.CryptoTest,Cross-Cutting,0.14285714285714285
+de.schildbach.wallet.util,de.schildbach.wallet.util.Formats,Cross-Cutting,0.5
+de.schildbach.wallet.util,de.schildbach.wallet.util.Formats,Domain Layer,0.5
+de.schildbach.wallet.util,de.schildbach.wallet.util.FormatsTest,Cross-Cutting,1.0
+de.schildbach.wallet.util,de.schildbach.wallet.util.GenericUtils,Service Layer,0.3333333333333333
+de.schildbach.wallet.util,de.schildbach.wallet.util.GenericUtils,Cross-Cutting,0.6666666666666666
+de.schildbach.wallet.util,de.schildbach.wallet.util.Io,Data Source Layer,0.75
+de.schildbach.wallet.util,de.schildbach.wallet.util.Io,Cross-Cutting,0.25
+de.schildbach.wallet.util,de.schildbach.wallet.util.Iso8601Format,Service Layer,0.25
+de.schildbach.wallet.util,de.schildbach.wallet.util.Iso8601Format,Utility Layer,0.125
+de.schildbach.wallet.util,de.schildbach.wallet.util.Iso8601Format,Cross-Cutting,0.625
+de.schildbach.wallet.util,de.schildbach.wallet.util.MonetarySpannable,Presentation Layer,0.5
+de.schildbach.wallet.util,de.schildbach.wallet.util.MonetarySpannable,Domain Layer,0.5
+de.schildbach.wallet.util,de.schildbach.wallet.util.Nfc,Data Source Layer,0.6666666666666666
+de.schildbach.wallet.util,de.schildbach.wallet.util.Nfc,Cross-Cutting,0.3333333333333333
+de.schildbach.wallet.util,de.schildbach.wallet.util.OnFirstPreDraw,Presentation Layer,0.5
+de.schildbach.wallet.util,de.schildbach.wallet.util.OnFirstPreDraw,Cross-Cutting,0.5
+de.schildbach.wallet.util,de.schildbach.wallet.util.OnFirstPreDraw$Callback,Presentation Layer,1.0
+de.schildbach.wallet.util,de.schildbach.wallet.util.Qr,Domain Layer,0.3333333333333333
+de.schildbach.wallet.util,de.schildbach.wallet.util.Qr,Data Source Layer,0.6666666666666666
+de.schildbach.wallet.util,de.schildbach.wallet.util.Toast,Presentation Layer,1.0
+de.schildbach.wallet.util,de.schildbach.wallet.util.ViewPagerTabs,Presentation Layer,1.0
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,Domain Layer,0.5263157894736842
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,Cross-Cutting,0.05263157894736842
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,Data Source Layer,0.21052631578947367
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,Presentation Layer,0.10526315789473684
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils,Service Layer,0.10526315789473684
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtils$MonospaceSpan,Cross-Cutting,1.0
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtilsTest,Cross-Cutting,0.25
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtilsTest,Data Source Layer,0.5
+de.schildbach.wallet.util,de.schildbach.wallet.util.WalletUtilsTest,Service Layer,0.25
+de.schildbach.wallet.util,de.schildbach.wallet.util.WholeStringBuilder,Presentation Layer,0.5
+de.schildbach.wallet.util,de.schildbach.wallet.util.WholeStringBuilder,Cross-Cutting,0.5
