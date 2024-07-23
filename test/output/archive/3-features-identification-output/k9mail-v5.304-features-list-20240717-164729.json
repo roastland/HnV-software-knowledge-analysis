@@ -1,0 +1,281 @@
+{
+  "feature_1": {
+    "feature_name": "AccountManager",
+    "feature_desc": "The main responsibility of this feature is to manage and display email accounts, settings, and preferences for the Android email client app, allowing users to create, edit, and import accounts.",
+    "p_layer_classes": [
+      "com.fsck.k9.activity.FolderList$FolderListAdapter: Manages the folder list display and interaction logic.: Manages the folder list display and interaction logic.: : Manages the folder list display and interaction logic.",
+      "com.fsck.k9.Account: Account stores all of the settings for a single account defined by the user. It is able to save\r\nand delete itself given a Preferences to work with. Each account is defined by a UUID.\r\n",
+      "com.fsck.k9.activity.Accounts: Manages the user interface, handles user interactions, and displays information for the Accounts activity in the Android email client app.",
+      "com.fsck.k9.activity.Accounts$AccountsImportedDialog: Manages the display of import results and handles actions after importing accounts in the Android email client app.",
+      "com.fsck.k9.activity.Accounts$SimpleDialog: Handles the presentation of dialogs and user interactions within the Android email client app.",
+      "com.fsck.k9.activity.Accounts$ListImportContentsAsyncTask: Handles importing email client settings from a specified URI and displays appropriate dialogs or actions based on the import status.",
+      "com.fsck.k9.activity.ActivityListener: Handles informing the user of various status changes and progress updates within the email client app.",
+      "com.fsck.k9.activity.FolderList: Handles the UI components, actions, and interactions for the FolderList activity in the Android email client app.",
+      "com.fsck.k9.activity.FolderList$FolderListHandler: Handles UI-related tasks such as updating folder lists, displaying toast messages, and refreshing data in the FolderList activity.",
+      "com.fsck.k9.helper.SizeFormatter: Responsible for formatting sizes into human-readable formats.",
+      "com.fsck.k9.activity.ColorPickerDialog: Manages color selection and change events in a dialog for an Android email client app.",
+      "com.fsck.k9.activity.ColorPickerDialog$OnColorChangedListener: Updates the color based on the user's selection in the color picker dialog.",
+      "com.fsck.k9.activity.Accounts$PasswordPromptDialog: Handles user input data retention, dialog display, and password setting for email servers.",
+      "com.fsck.k9.activity.Accounts$AccountsHandler: Handles updating UI elements, displaying toast messages, and refreshing data in the Android email client app.",
+      "com.fsck.k9.activity.Accounts$ImportSelectionDialog: Manages the user interface for displaying and interacting with import selection dialog in the Accounts activity.",
+      "com.fsck.k9.activity.setup.AccountSettings: Manages email account settings and preferences for the Android email client app.",
+      "com.fsck.k9.activity.setup.Prefs: Manages preferences and settings for the Android email client app.",
+      "com.fsck.k9.activity.Accounts$ImportAsyncTask: Handles the import of email client settings from a file and displays import outcome dialogs.",
+      "com.fsck.k9.activity.Accounts$AccountsAdapter: Handles the generation of views for displaying account information in the Android email client app."
+    ]
+  },
+  "feature_2": {
+    "feature_name": "EmailClientUI",
+    "feature_desc": "The main responsibility of this feature is to manage email messages, attachments, and cryptography-related interactions in an Android email client app, providing a user-friendly interface for viewing, interacting with, and managing email messages.",
+    "p_layer_classes": [
+      "com.fsck.k9.ui.messageview.MessageTopView: Manages the user interface elements and behavior for displaying and interacting with email messages.",
+      "com.fsck.k9.view.ToolableViewAnimator: Controls the addition, display, and switching of child views within the ToolableViewAnimator.",
+      "com.fsck.k9.ui.messageview.AttachmentController$SaveAttachmentAsyncTask: Handles the asynchronous saving of email attachments and manages UI updates related to attachment processing.",
+      "com.fsck.k9.ui.messageview.MessageViewFragment: Handles the display, interaction, and management of email messages in the Android email client app.",
+      "com.fsck.k9.ui.messageview.MessageCryptoPresenter: Handles message cryptography-related UI interactions and logic.",
+      "com.fsck.k9.ui.messageview.MessageCryptoPresenter$MessageCryptoMvpView: Handles cryptographic operations and user interactions related to message encryption and decryption.",
+      "com.fsck.k9.ui.messageview.LockedAttachmentView: Handles the display and interaction of locked attachments in the Android email client app.",
+      "com.fsck.k9.ui.messageview.MessageViewFragment$MessageViewFragmentListener: Handles user interactions and updates the UI in the email client app.",
+      "com.fsck.k9.view.MessageHeader: Manages the display and interaction of email message headers in the user interface.",
+      "com.fsck.k9.ui.messageview.AttachmentController$ViewAttachmentAsyncTask: Handles the asynchronous viewing of email attachments in an Android email client app.",
+      "com.fsck.k9.ui.messageview.AttachmentController: Manages the handling, downloading, saving, and viewing of email attachments in the Android email client app.",
+      "com.fsck.k9.activity.MessageLoaderHelper: Handles the loading, decoding, and processing of email messages in the Android email client app.",
+      "com.fsck.k9.helper.RetainFragment: Manages the retention and retrieval of data across configuration changes in an Android application.",
+      "com.fsck.k9.view.MessageCryptoStatusView: Manages the display of message encryption status icons in the email client app.",
+      "com.fsck.k9.helper.FileBrowserHelper: Handles file browsing and path input functionalities for the Android email client app.",
+      "com.fsck.k9.view.MessageHeader$OnLayoutChangedListener: Notify when the layout of the message header has changed.",
+      "com.fsck.k9.helper.FileBrowserHelper$FileBrowserFailOverCallback: Handles file browsing operations and path entry events for failover handling."
+    ]
+  },
+  "feature_3": {
+    "feature_name": "EmailClientUI",
+    "feature_desc": "The main responsibility of this feature is to manage and display email messages within the K-9 Mail Android email client app, allowing users to interact with their emails.",
+    "p_layer_classes": [
+      "com.fsck.k9.activity.MessageList: Manages the display and interaction of email messages within the Android email client app.",
+      "com.fsck.k9.fragment.MessageListFragment: ",
+      "com.fsck.k9.activity.FolderList$FolderClickListener: Manages folder click events and initiates search within the email client app.",
+      "com.fsck.k9.view.MessageTitleView: Manages the display and behavior of the message title in the email client app.",
+      "com.fsck.k9.activity.Accounts$AccountClickListener: Manages account click events and opens the search screen with a specified query.",
+      "com.fsck.k9.view.ViewSwitcher: Manages animations and view switching in the Android email client app.",
+      "com.fsck.k9.view.ViewSwitcher$OnSwitchCompleteListener: Responsible for providing a callback mechanism for performing actions after a view switch is finished.",
+      "com.fsck.k9.K9: The main K9 app.\r\n",
+      "com.fsck.k9.fragment.ConfirmationDialogFragment: Handles user interactions and dialog creation for confirmation dialogs within the Android email client app.",
+      "com.fsck.k9.fragment.MessageListFragment$ActionModeCallback: Handles user interactions with the action mode menu items in an Android email client app.",
+      "com.fsck.k9.activity.compose.MessageActions: Handles actions related to composing, editing, forwarding, and replying to email messages within the Android email client app.",
+      "com.fsck.k9.fragment.MessageListFragment$MessageListFragmentListener: Responsible for handling user interactions and updating the user interface in the email client app.",
+      "com.fsck.k9.fragment.MessageViewHolder: Handles user interactions and displays email message information within the user interface.",
+      "com.fsck.k9.activity.setup.AccountSetupCheckSettings$CheckAccountTask: Handles checking email account settings, synchronizing folders, and clearing certificate error notifications during account setup.",
+      "com.fsck.k9.activity.setup.AccountSetupCheckSettings: Handles the setup and checking of email account settings in the Android email client app.",
+      "com.fsck.k9.widget.list.MessageListRemoteViewFactory: Responsible for populating and managing the list of email messages in the Android email client app widget."
+    ]
+  },
+  "feature_4": {
+    "feature_name": "OpenPgpSettings",
+    "feature_desc": "This feature is responsible for handling OpenPGP encryption-related actions and settings within the K-9 Mail email client app, providing users with options to encrypt, sign, or disable OpenPGP functionality.",
+    "p_layer_classes": [
+      "com.fsck.k9.activity.compose.RecipientMvpView: Handles recipient-related actions in the email compose activity.",
+      "com.fsck.k9.activity.compose.PgpEncryptDescriptionDialog: Responsible for displaying PGP encryption information in a dialog for the Android email client app.",
+      "com.fsck.k9.view.HighlightDialogFragment: Manages the user interface, defines UI elements and behavior, displays information, responds to user input, and updates views.",
+      "com.fsck.k9.activity.compose.PgpInlineDialog: Handles user interaction for OpenPGP inline settings within the email client app.",
+      "com.fsck.k9.activity.compose.PgpInlineDialog$OnOpenPgpInlineChangeListener: Toggle the visibility of OpenPGP inline PGP/MIME controls in the email compose screen.",
+      "com.fsck.k9.activity.compose.PgpSignOnlyDialog: Responsible for creating and customizing dialogs for the PgpSignOnlyDialog class.",
+      "com.fsck.k9.view.RecipientSelectView: Handles the display, interaction, and manipulation of recipient tokens in the email client app.",
+      "com.fsck.k9.view.ThemeUtils: Responsible for retrieving styled colors based on attribute resources for UI customization.",
+      "com.fsck.k9.activity.compose.PgpEnabledErrorDialog: Handles user interaction related to OpenPGP enabled error messages and provides options for dismissal or action.",
+      "com.fsck.k9.activity.AlternateRecipientAdapter: Manages recipient data and interactions in the email client app.",
+      "com.fsck.k9.activity.compose.PgpSignOnlyDialog$OnOpenPgpSignOnlyChangeListener: Toggle the option to sign emails only without encryption in the OpenPGP settings.",
+      "com.fsck.k9.activity.compose.RecipientAdapter: Manages recipient data and interactions in the Android email client app.",
+      "com.fsck.k9.activity.AlternateRecipientAdapter$AlternateRecipientListener: Handles recipient changes and removal in the email client app.",
+      "com.fsck.k9.activity.compose.PgpEnabledErrorDialog$OnOpenPgpDisableListener: Responsible for allowing users to disable OpenPGP functionality in the email client app.",
+      "com.fsck.k9.view.RecipientSelectView$RecipientTokenViewHolder: Responsible for visually representing recipient information and crypto status icons in the email client app."
+    ]
+  },
+  "feature_5": {
+    "feature_name": "EmailComposer",
+    "feature_desc": "This feature is responsible for composing, editing, and processing email messages in the Android email client app, including managing attachments, recipients, and crypto status.",
+    "p_layer_classes": [
+      "com.fsck.k9.ui.compose.QuotedMessageMvpView: Manages the user interface elements and behavior for displaying quoted message content within the email compose screen.",
+      "com.fsck.k9.ui.compose.QuotedMessagePresenter: Handles the logic for composing and displaying quoted messages in the email client app.",
+      "com.fsck.k9.activity.MessageCompose: Handles the composition, editing, and processing of email messages in the Android email client app.",
+      "com.fsck.k9.activity.compose.RecipientPresenter: Handles recipient-related functionalities, such as adding recipients, updating crypto status, and managing recipient visibility in the email client app.",
+      "com.fsck.k9.activity.compose.AttachmentPresenter: Manages attachments in the Android email client app.",
+      "com.fsck.k9.activity.compose.AttachmentPresenter$AttachmentMvpView: Handles interactions with attachments in the email compose screen.",
+      "com.fsck.k9.activity.compose.ComposeCryptoStatus: Manages the crypto status and settings for composing emails in the email client app.",
+      "com.fsck.k9.activity.compose.RecipientPresenter$RecipientsChangedListener: Notify the listener that the recipients of the email have changed.",
+      "com.fsck.k9.ui.EolConvertingEditText: Responsible for managing text content with consistent line endings for compatibility with email protocols.",
+      "com.fsck.k9.message.html.HtmlProcessor: Responsible for sanitizing and modifying HTML content for display in an Android email client app.",
+      "com.fsck.k9.message.html.HtmlConverter: Converts plain text email content to HTML format with proper formatting.",
+      "com.fsck.k9.message.html.UriLinkifier: Responsible for linkifying URIs in text for better user experience.",
+      "com.fsck.k9.message.html.UriParser: Converts URIs in email content to clickable links for better user experience.",
+      "com.fsck.k9.activity.compose.IdentityAdapter: Manages the population and display of a list of accounts and identities for selection in the user interface.",
+      "com.fsck.k9.activity.compose.AttachmentPresenter$AttachmentsChangedListener: Notify listeners about attachment changes during email composition."
+    ]
+  },
+  "feature_6": {
+    "feature_name": "EmailAccountSetup",
+    "feature_desc": "The main responsibility of this feature is to manage the setup and configuration of email accounts, including account types, settings, and composition options, for an Android email client app.",
+    "p_layer_classes": [
+      "com.fsck.k9.activity.setup.AccountSetupNames: Handles the setup of account names and descriptions during the setup process.",
+      "com.fsck.k9.activity.setup.AccountSetupBasics: Handles the setup process of email accounts including validation, initialization, and user interaction.",
+      "com.fsck.k9.activity.K9Activity: Manages user interface interactions and initializes necessary components for the activity.",
+      "com.fsck.k9.activity.setup.AccountSetupOutgoing: Handles the setup and validation of outgoing email account settings in an Android email client app.",
+      "com.fsck.k9.activity.setup.AuthTypeAdapter: Initialize an adapter for displaying authentication types in the email client setup process.",
+      "com.fsck.k9.activity.K9ActivityCommon: Manages the setup and customization of the Android email client app's activity.",
+      "com.fsck.k9.activity.setup.AccountSetupOptions: Handles user input for configuring account settings and persisting the changes.",
+      "com.fsck.k9.activity.EditIdentity: Handles the editing and saving of email identity information within the Android email client app.",
+      "com.fsck.k9.activity.setup.AccountSetupIncoming: Handles the setup and configuration of incoming email account settings in an Android email client app.",
+      "com.fsck.k9.view.ClientCertificateSpinner: Manages the user interface elements and behavior related to client certificate selection and deletion.",
+      "com.fsck.k9.activity.setup.WelcomeMessage: Handles the welcome message UI setup, button click events, and starting the WelcomeMessage activity.",
+      "com.fsck.k9.activity.setup.AccountSetupComposition: Handles the setup and editing of email account composition settings.",
+      "com.fsck.k9.notification.CertificateErrorNotifications: Handles the creation, display, and management of certificate error notifications in the Android email client app.",
+      "com.fsck.k9.activity.setup.AccountSetupAccountType: Handles the setup and configuration of different email account types for the Android email client app.",
+      "com.fsck.k9.activity.setup.ConnectionSecurityAdapter: Manages the display and selection of connection security types in the UI setup process."
+    ]
+  },
+  "feature_7": {
+    "feature_name": "NotificationManager",
+    "feature_desc": "This feature is responsible for managing notifications in the K-9 Mail Android email client app, including setup, customization, and handling various notification actions.",
+    "p_layer_classes": [
+      "com.fsck.k9.notification.BaseNotifications: Manages the setup and customization of notifications for the Android email client app.",
+      "com.fsck.k9.notification.NotificationActionCreator: Manages the creation of pending intents for various notification actions in the Android email client app.",
+      "com.fsck.k9.notification.SyncNotifications: Responsible for managing notifications related to email synchronization.",
+      "com.fsck.k9.controller.MessagingController: Starts a long running (application) Thread that will run through commands\r\nthat require remote mailbox access. This class is used to serialize and\r\nprioritize these commands. Each method that will submit a command requires a\r\nMessagingListener instance to be provided. It is expected that that listener\r\nhas also been added as a registered listener using addListener(). When a\r\ncommand is to be executed, if the listener that was provided with the command\r\nis no longer registered the command is skipped. The design idea for the above\r\nis that when an Activity starts it registers as a listener. When it is paused\r\nit removes itself. Thus, any commands that that activity submitted are\r\nremoved from the queue once the activity is no longer active.\r\n",
+      "com.fsck.k9.notification.NotificationController: Manages notifications and notification-related functionalities in the Android email client app.",
+      "com.fsck.k9.notification.NewMailNotifications: Manages new mail notifications for specific email accounts in the Android email client app.",
+      "com.fsck.k9.notification.WearNotifications: Handles the creation and management of notifications for an Android email client app.",
+      "com.fsck.k9.notification.AuthenticationErrorNotifications: Handles authentication error notifications and notification management.",
+      "com.fsck.k9.activity.NotificationDeleteConfirmation: Handles the confirmation and deletion of email notifications in the Android email client app.",
+      "com.fsck.k9.notification.SendFailedNotifications: Handles the display and management of notifications related to failed email send attempts.",
+      "com.fsck.k9.notification.DeviceNotifications: Manages notifications and notification actions for an Android email client app.",
+      "com.fsck.k9.notification.LockScreenNotification: Handles the configuration and creation of lock screen notifications for the Android email client app.",
+      "com.fsck.k9.activity.ConfirmationDialog: Creates confirmation dialogs with specified parameters and actions."
+    ]
+  },
+  "feature_8": {
+    "feature_name": "AccountManager",
+    "feature_desc": "The main responsibility of this feature is to provide a user interface for managing email accounts and identities, allowing users to select an account or identity and interact with their email addresses.",
+    "p_layer_classes": [
+      "com.fsck.k9.activity.ChooseIdentity: Handles user interactions and updates the UI elements based on the list of identities associated with the account.",
+      "com.fsck.k9.activity.K9ListActivity: Manages touch events, key events, activity initialization, and gesture detection in the Android email client app.",
+      "com.fsck.k9.activity.ChooseFolder: Handles user interactions, initializes UI components, and updates folder list based on user actions in the Android email client app.",
+      "com.fsck.k9.activity.ManageIdentities: Handles managing identities within the Android email client app.",
+      "com.fsck.k9.activity.AccountList$LoadAccounts: Responsible for asynchronously retrieving and loading a list of email accounts from preferences and updating the UI with the retrieved accounts.",
+      "com.fsck.k9.activity.AccountList: Handles the setup and behavior of the AccountList activity in the Android email client app.",
+      "com.fsck.k9.activity.EmailAddressList: Handles the display and interaction with email addresses in the email client app.",
+      "com.fsck.k9.activity.LauncherShortcuts: Handles the creation of launcher shortcuts and display of special accounts in the Android email client app.",
+      "com.fsck.k9.activity.ChooseAccount: Responsible for handling the selection of an account and passing its UUID to the calling activity."
+    ]
+  },
+  "feature_9": {
+    "feature_name": "EmailViewer",
+    "feature_desc": "The main responsibility of this feature is to provide a user interface for viewing and interacting with email messages, including attachments, within the K-9 Mail Android app.",
+    "p_layer_classes": [
+      "com.fsck.k9.view.MessageWebView: Manages the display and interaction of HTML content in a WebView for the Android email client app.",
+      "com.fsck.k9.ui.messageview.MessageContainerView: Manages the display and interaction of email message content within the app.",
+      "com.fsck.k9.ui.messageview.AttachmentView: Manages interactions with attachments in the email client app's message view.",
+      "com.fsck.k9.view.RigidWebView: Handles size changes and applies throttling for the RigidWebView in the Android email client app.",
+      "com.fsck.k9.helper.Contacts: Manages contacts-related operations and interactions with the device's contacts database.",
+      "com.fsck.k9.ui.messageview.AttachmentViewCallback: Responsible for allowing users to interact with email attachments within the app.",
+      "com.fsck.k9.view.K9WebViewClient: Handles web page loading, attachment handling, and URL loading behavior within a WebView.",
+      "com.fsck.k9.view.MessageWebView$OnPageFinishedListener: Executes actions after a web page has finished loading in the MessageWebView."
+    ]
+  },
+  "feature_10": {
+    "feature_name": "UnreadWidget",
+    "feature_desc": "This feature is responsible for managing and displaying unread email counts on the Android device's home screen, allowing users to quickly see how many unread emails they have across multiple accounts.",
+    "p_layer_classes": [
+      "com.fsck.k9.activity.UnreadWidgetConfiguration: Handles the configuration options and interactions for the Android email client app widget.",
+      "com.fsck.k9.provider.UnreadWidgetProvider: Responsible for updating the widgets with unread email counts and managing widget configurations.",
+      "com.fsck.k9.activity.setup.AccountSettings$PopulateFolderPrefsTask: Populates and manages folder preferences for an email account in an Android email client app.",
+      "com.fsck.k9.activity.K9PreferenceActivity: Manages the user interface settings and preferences of the Android email client app.",
+      "com.fsck.k9.activity.setup.FolderSettings: Manages folder settings preferences for a specific folder in an Android email client app.",
+      "com.fsck.k9.helper.UnreadWidgetProperties: Manages the properties and behavior of unread widgets in the Android email client app."
+    ]
+  },
+  "feature_11": {
+    "feature_name": "AccountManager",
+    "feature_desc": "The main responsibility of this feature is to provide a user interface for managing email accounts and displaying account information, including font size settings.",
+    "p_layer_classes": [
+      "com.fsck.k9.fragment.MessageListAdapter: Manages the display of email messages in the email client app.",
+      "com.fsck.k9.FontSizes: Manages the default font sizes for various UI elements in the email client app.",
+      "com.fsck.k9.activity.setup.FontSizeSettings: Handles font size settings for different UI elements in the email client app.",
+      "com.fsck.k9.helper.Utility: Manages various utility methods for common operations in the Android email client app.",
+      "com.fsck.k9.ui.ContactBadge: Manages the user interface, responds to user input, and updates views.",
+      "com.fsck.k9.activity.AccountList$AccountsAdapter: Responsible for displaying account information in the account list view."
+    ]
+  },
+  "feature_12": {
+    "feature_name": "MessageHandler",
+    "feature_desc": "The main responsibility of this feature is handling email client operations and performing corresponding actions in the MessageListFragment, including UI updates and user feedback.",
+    "p_layer_classes": [
+      "com.fsck.k9.fragment.MessageListFragment$MessageListActivityListener: Handles UI updates and user feedback for various email client operations.",
+      "com.fsck.k9.fragment.MessageListHandler: Handles different types of messages to perform corresponding actions in the MessageListFragment."
+    ]
+  },
+  "feature_13": {
+    "feature_name": "AccountManager",
+    "feature_desc": "The main responsibility of this feature is to manage and interact with user accounts, including displaying folder lists, handling account settings, and performing import/export operations.",
+    "p_layer_classes": [
+      "com.fsck.k9.activity.Accounts$MoveAccountAsyncTask: Manages the folder list display and interaction logic.",
+      "com.fsck.k9.activity.misc.ExtendedAsyncTask: Account stores all of the settings for a single account defined by the user. It is able to save\r\nand delete itself given a Preferences to work with. Each account is defined by a UUID.\r\n",
+      "com.fsck.k9.activity.Accounts$ExportAsyncTask: Manages the user interface, handles user interactions, and displays information for the Accounts activity in the Android email client app.",
+      "com.fsck.k9.activity.Accounts$SetPasswordsAsyncTask: Manages the display of import results and handles actions after importing accounts in the Android email client app."
+    ]
+  },
+  "feature_14": {
+    "feature_name": "AttachmentHandler",
+    "feature_desc": "This feature is responsible for managing the user interface elements and behavior for displaying and interacting with email messages, specifically handling attachments and their download process.",
+    "p_layer_classes": [
+      "com.fsck.k9.fragment.AttachmentDownloadDialogFragment: Manages the user interface elements and behavior for displaying and interacting with email messages.",
+      "com.fsck.k9.fragment.AttachmentDownloadDialogFragment$AttachmentDownloadCancelListener: Controls the addition, display, and switching of child views within the ToolableViewAnimator."
+    ]
+  },
+  "feature_15": {
+    "feature_name": "EmailViewer",
+    "feature_desc": "The main responsibility of this feature is to manage the display and interaction of email messages within the Android email client app, allowing users to view and interact with their emails.",
+    "p_layer_classes": [
+      "com.fsck.k9.fragment.ProgressDialogFragment$CancelListener: Manages the display and interaction of email messages within the Android email client app.",
+      "com.fsck.k9.fragment.ProgressDialogFragment: "
+    ]
+  },
+  "feature_16": {
+    "feature_name": "PgpSetup",
+    "feature_desc": "The main responsibility of this feature is to provide PGP encryption information and handling recipient-related actions in the email compose activity for the K-9 Mail Android app.",
+    "p_layer_classes": [
+      "com.fsck.k9.activity.setup.OpenPgpAppSelectDialog$ApgDeprecationDialogFragment: Handles recipient-related actions in the email compose activity.",
+      "com.fsck.k9.activity.setup.OpenPgpAppSelectDialog: Responsible for displaying PGP encryption information in a dialog for the Android email client app."
+    ]
+  },
+  "feature_17": {
+    "feature_name": "QuotedCompose",
+    "feature_desc": "The main responsibility of this feature is to manage the composition and display of quoted messages in the email client app, including handling user interface elements and behavior.",
+    "p_layer_classes": [
+      "com.fsck.k9.ui.messageview.CryptoInfoDialog$OnClickShowCryptoKeyListener: Manages the user interface elements and behavior for displaying quoted message content within the email compose screen.",
+      "com.fsck.k9.ui.messageview.CryptoInfoDialog: Handles the logic for composing and displaying quoted messages in the email client app."
+    ]
+  },
+  "feature_18": {
+    "feature_name": "AccountSetup",
+    "feature_desc": "The main responsibility of this feature is to handle the setup process of email accounts, including validation, initialization, and user interaction during the account setup process.",
+    "p_layer_classes": [
+      "com.fsck.k9.activity.misc.ContactPictureLoader: Handles the setup of account names and descriptions during the setup process.",
+      "com.fsck.k9.activity.misc.ContactPictureLoader$FallbackGlideBitmapDecoder: Handles the setup process of email accounts including validation, initialization, and user interaction."
+    ]
+  },
+  "feature_19": {
+    "feature_name": "NotificationSetup",
+    "feature_desc": "The main responsibility of this feature is to manage notifications and their customization for the K-9 Mail Android email client app, allowing users to set up and customize notification settings.",
+    "p_layer_classes": [
+      "com.fsck.k9.activity.UpgradeDatabases$UpgradeDatabaseBroadcastReceiver: Manages the setup and customization of notifications for the Android email client app.",
+      "com.fsck.k9.activity.UpgradeDatabases: Manages the creation of pending intents for various notification actions in the Android email client app."
+    ]
+  },
+  "feature_20": {
+    "feature_name": "SwipeManager",
+    "feature_desc": "This feature is responsible for handling user interactions and updating UI elements based on identities associated with an account, utilizing a swipe gesture detector to manage touch events and key events in the Android email client app.",
+    "p_layer_classes": [
+      "com.fsck.k9.activity.misc.SwipeGestureDetector: Handles user interactions and updates the UI elements based on the list of identities associated with the account.",
+      "com.fsck.k9.activity.misc.SwipeGestureDetector$OnSwipeGestureListener: Manages touch events, key events, activity initialization, and gesture detection in the Android email client app."
+    ]
+  }
+}
