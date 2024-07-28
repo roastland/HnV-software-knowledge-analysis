@@ -1,7 +1,9 @@
 [project]
-name=jhotdraw-7.6
-desc=a Java application
-ifile=D:\Research\javapers\sample_output\jhotdraw-7.6-detailed.json
+name=Solitaire (v1.1)
+desc=Implementation of the Solitaire card game with JavaFX.
+ifile=D:\HnV-software-knowledge-analysis\test\case-studies\extracted-knowledge-graph\solitaire-v1.1-clean.json
+; uncomment the ifile below and comment the ifile above if you have done the ASCS & DSAR and want to do Features Identification
+; ifile=D:\HnV-software-knowledge-analysis\test\output\1-ASCS-and-DeductiveSAR\Solitaire (v1.1)-ascs-dsar-gpt-4o-mini-20240727-224730.json
 
 [openai]
 apikey=apikey

@@ -1,0 +1,494 @@
+{
+  "feature_1": {
+    "feature_name": "cardInteractionManagement",
+    "feature_description": "This feature is responsible for the visual representation and user interactions of various components in the Solitaire game, including card piles, stacks, and the deck. It ensures that players can interact with the game elements effectively through a graphical interface.",
+    "feature_members": {
+      "ca.mcgill.cs.stg.solitaire.gui.CardPileView": {
+        "description": "This class is responsible for visually representing and managing the interactions of a card pile in the Solitaire game interface.",
+        "roleStereotype": "User Interfacer",
+        "layer": "Presentation Layer",
+        "class_members": {
+          "ca.mcgill.cs.stg.solitaire.gui.CardPileView.buildLayout()": {
+            "description": "The method builds the visual layout of a card pile in the Solitaire game by adding card images to the UI based on the current state of the card stack.",
+            "reason": "The method is provided to dynamically create and update the visual representation of the card pile based on the game state.",
+            "howToUse": "This method is typically called within the context of a GUI component that represents a card pile. It should be invoked whenever the state of the card pile changes to refresh the displayed cards.",
+            "howItWorks": "The method first clears any existing children from the UI component. It retrieves the card stack for the specified tableau pile index and checks if it is empty. If not empty, it iterates through the cards in the stack, creating image views for each card, setting their positions, and adding them to the UI. It also sets up drag-and-drop event handlers for each card image based on its visibility in the tableau.",
+            "assertions": {
+              "preConditions": [
+                "The method assumes that the GameModel instance is properly initialized.",
+                "The aIndex parameter must be a valid index for the tableau piles."
+              ],
+              "postConditions": [
+                "The UI component will contain image views representing the current state of the card pile.",
+                "Event handlers for drag-and-drop interactions will be set up for each visible card."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.CardPileView.ca.mcgill.cs.stg.solitaire.gui.CardPileView(ca.mcgill.cs.stg.solitaire.model.TableauPile)": {
+            "description": "This constructor initializes a CardPileView instance for a given TableauPile, setting its layout and registering it as a listener to the game model.",
+            "reason": "The method is provided to create a visual representation of a TableauPile in the Solitaire game, allowing for user interaction and display of card elements.",
+            "howToUse": "To use this constructor, create an instance of TableauPile and pass it as an argument to the CardPileView constructor. The CardPileView will then be set up to display the cards in the specified TableauPile.",
+            "howItWorks": "The constructor assigns the provided TableauPile to the instance variable aIndex. It sets padding and alignment for the view, builds the layout for displaying cards, and registers the view as a listener to the GameModel to respond to game state changes.",
+            "assertions": {
+              "preConditions": [
+                "The provided TableauPile instance must not be null."
+              ],
+              "postConditions": [
+                "A CardPileView instance is created and configured to display the specified TableauPile."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.CardPileView.createDragDetectedHandler(javafx.scene.image.ImageView,ca.mcgill.cs.stg.solitaire.cards.Card)": {
+            "description": "The method creates a drag detected event handler for a card image view that initiates a drag-and-drop operation for the specified card.",
+            "reason": "The method is provided to facilitate the drag-and-drop functionality for cards in the Solitaire game interface.",
+            "howToUse": "To use this method, you need to pass an ImageView of the card and the corresponding Card object. The returned event handler should be set to the ImageView to handle drag detected events.",
+            "howItWorks": "The method defines an anonymous inner class that implements the EventHandler interface for MouseEvent. When a drag is detected, it starts a drag-and-drop operation on the ImageView and sets the content of the dragboard with serialized card data. The event is then consumed to prevent further processing.",
+            "assertions": {
+              "preConditions": [
+                "The pImageView must be a valid ImageView instance.",
+                "The pCard must be a valid Card instance."
+              ],
+              "postConditions": [
+                "A drag-and-drop operation is initiated for the specified card.",
+                "The dragboard contains the serialized representation of the card."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.CardPileView.createDragDroppedHandler(javafx.scene.image.ImageView,ca.mcgill.cs.stg.solitaire.cards.Card)": {
+            "description": "The method creates an event handler for handling drag-and-drop events for a card in the Solitaire game.",
+            "reason": "The method is provided to facilitate the drag-and-drop functionality for cards in the Solitaire game, enhancing user interaction.",
+            "howToUse": "To use this method, instantiate a CardPileView object and call createDragDroppedHandler with the appropriate ImageView and Card. Then, set the returned event handler to the ImageView's onDragDropped property.",
+            "howItWorks": "The method defines an anonymous inner class that implements the EventHandler interface for DragEvent. It checks if the dragboard contains a string, retrieves the card information from it, and performs a card move operation. The success of the operation is indicated by setting the drop completion status of the event. Finally, the event is consumed to prevent further processing.",
+            "assertions": {
+              "preConditions": [
+                "The drag event must be initiated with a valid dragboard containing card information.",
+                "The CardPileView instance must be properly initialized."
+              ],
+              "postConditions": [
+                "The card move operation is performed if the dragboard contains valid data.",
+                "The drag event is marked as completed or not based on the success of the operation."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.CardPileView.createDragEnteredHandler(javafx.scene.image.ImageView,ca.mcgill.cs.stg.solitaire.cards.Card)": {
+            "description": "The method creates an event handler that visually indicates a legal drag-and-drop action for a card in the Solitaire game.",
+            "reason": "The method is provided to enhance user interaction by visually indicating valid drop targets during drag-and-drop operations in the game.",
+            "howToUse": "To use this method, you need to call it with an ImageView and a Card instance when setting up drag-and-drop functionality. The returned event handler should be registered to the drag-entered event of the target UI component.",
+            "howItWorks": "The method defines an anonymous inner class that implements the EventHandler interface for DragEvent. When a drag event occurs, it checks if the move is legal using the GameModel's isLegalMove method. If the move is legal, it applies a drop shadow effect to the ImageView to indicate a valid drop target. Finally, it consumes the event to prevent further processing.",
+            "assertions": {
+              "preConditions": [
+                "The pImageView must be a valid ImageView instance.",
+                "The pCard must be a valid Card instance."
+              ],
+              "postConditions": [
+                "An EventHandler for DragEvent is returned that can be used to handle drag events."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.CardPileView.createDragExitedHandler(javafx.scene.image.ImageView,ca.mcgill.cs.stg.solitaire.cards.Card)": {
+            "description": "The method creates an event handler that resets the visual effect of a card image view when a drag event exits the card area.",
+            "reason": "The method is provided to enhance user experience by visually indicating when a drag operation is no longer valid over a card area.",
+            "howToUse": "To use this method, you would call it with an ImageView and a Card instance to obtain a drag exited event handler. This handler can then be set on the ImageView to respond to drag exit events.",
+            "howItWorks": "The method returns an anonymous inner class that implements the EventHandler interface. When the handle method is invoked due to a drag exit event, it removes any visual effects applied to the ImageView. It also consumes the event to prevent further processing.",
+            "assertions": {
+              "preConditions": [
+                "The pImageView must be a valid ImageView instance.",
+                "The pCard must be a valid Card instance."
+              ],
+              "postConditions": [
+                "The visual effect of pImageView is set to null when the drag event exits."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.CardPileView.createDragOverHandler(javafx.scene.image.ImageView,ca.mcgill.cs.stg.solitaire.cards.Card)": {
+            "description": "The method creates a drag-over event handler for a card pile view that determines if a dragged card can be legally moved to that pile.",
+            "reason": "The method is provided to facilitate the drag-and-drop functionality of cards within the Solitaire game, ensuring that only legal moves are accepted.",
+            "howToUse": "To use this method, you need to create an instance of CardPileView and call createDragOverHandler with the appropriate ImageView and Card parameters. The returned event handler should be set on the ImageView to handle drag-over events.",
+            "howItWorks": "The method returns an event handler that checks if the source of the drag event is not the same as the target ImageView. It then verifies if the dragboard contains a string representation of a card and checks if the move is legal using the GameModel. If the move is legal, it accepts the transfer mode as MOVE.",
+            "assertions": {
+              "preConditions": [
+                "The pImageView must be a valid ImageView instance.",
+                "The pCard must be a valid Card instance."
+              ],
+              "postConditions": [
+                "An EventHandler for DragEvent is returned that can be used to handle drag-over events."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.CardPileView.gameStateChanged()": {
+            "description": "The method updates the layout of the card pile view in response to changes in the game state.",
+            "reason": "The method is provided to ensure that the user interface reflects the current state of the game whenever there is a change.",
+            "howToUse": "This method is typically called by the game controller or another component when the game state changes. It should be invoked whenever there are updates to the game that require the UI to be refreshed.",
+            "howItWorks": "The method overrides a base class or interface method to provide specific behavior for the card pile view. It calls the `buildLayout()` method, which is responsible for constructing or updating the visual representation of the card pile. This ensures that any changes in the game state are accurately reflected in the user interface.",
+            "assertions": {
+              "preConditions": [],
+              "postConditions": [
+                "The layout of the card pile view is updated to reflect the current game state."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.CardPileView.getImage(ca.mcgill.cs.stg.solitaire.cards.Card)": {
+            "description": "The method retrieves the appropriate image representation of a card based on its visibility in the tableau.",
+            "reason": "The method is provided to encapsulate the logic of determining which image to display for a card based on its state in the game.",
+            "howToUse": "To use this method, call it with a Card object as an argument. It will return the corresponding image based on the card's visibility in the tableau.",
+            "howItWorks": "The method first checks if the card is visible in the tableau using the GameModel's instance method. If the card is visible, it retrieves the card's image from the CardImages class. If not, it returns the back image of the card.",
+            "assertions": {
+              "preConditions": [
+                "The GameModel instance must be initialized.",
+                "The Card object must not be null."
+              ],
+              "postConditions": [
+                "An Image object representing the card or its back is returned."
+              ]
+            },
+            "layer": "Presentation Layer"
+          }
+        }
+      },
+      "ca.mcgill.cs.stg.solitaire.cards.CardImages": {
+        "description": "This class is responsible for managing and providing access to card images used in the Solitaire game.",
+        "roleStereotype": "Service Provider",
+        "layer": "Domain Layer",
+        "class_members": {
+          "ca.mcgill.cs.stg.solitaire.cards.CardImages.ca.mcgill.cs.stg.solitaire.cards.CardImages()": {
+            "description": "The method is a private constructor for the CardImages class, preventing instantiation from outside the class.",
+            "reason": "The method is provided to enforce a singleton pattern or to restrict instantiation of the CardImages class.",
+            "howToUse": "This method is used internally within the CardImages class. To utilize the functionality of CardImages, other public methods within the class should be called after the class is instantiated through a different mechanism, if applicable.",
+            "howItWorks": "The method does not perform any operations as it is a constructor. It initializes the CardImages class but does not allow external classes to create instances. This design may be part of a singleton pattern or a utility class approach.",
+            "assertions": {
+              "preConditions": [],
+              "postConditions": []
+            },
+            "layer": "Domain Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.cards.CardImages.getBack()": {
+            "description": "The method retrieves the back image of a playing card for use in the Solitaire game.",
+            "reason": "This method is provided to encapsulate the logic for obtaining the back image of a card, promoting code reuse and maintainability.",
+            "howToUse": "To use this method, simply call CardImages.getBack() from anywhere in the application where the back image of a card is needed. Ensure that the CardImages class is properly initialized and accessible in your context.",
+            "howItWorks": "The method is static and calls another static method getCard() from the same class, passing the string 'b' as an argument. This string likely corresponds to a specific identifier for the back image of the card. The getCard() method presumably retrieves the appropriate Image object based on this identifier.",
+            "assertions": {
+              "preConditions": [],
+              "postConditions": [
+                "The returned Image object is not null and represents the back of a card."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.cards.CardImages.getCard(ca.mcgill.cs.stg.solitaire.cards.Card)": {
+            "description": "This method retrieves the image representation of a specified card object.",
+            "reason": "The method is provided to facilitate the retrieval of card images based on card objects, enhancing the visual representation of the game.",
+            "howToUse": "To use this method, pass a valid Card object to the getCard method. It will return the corresponding image for that card, which can then be displayed in the user interface.",
+            "howItWorks": "The method first asserts that the provided card object is not null. It then calls another method to get a code representation of the card, which is used to fetch the appropriate image. The image is returned as a javafx.scene.image.Image object.",
+            "assertions": {
+              "preConditions": [
+                "The pCard parameter must not be null."
+              ],
+              "postConditions": [
+                "An Image object representing the card is returned."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.cards.CardImages.getCard(java.lang.String)": {
+            "description": "The method retrieves a card image based on a provided code, loading it from resources if it is not already cached.",
+            "reason": "This method is provided to efficiently manage and retrieve card images, minimizing resource loading by caching previously accessed images.",
+            "howToUse": "To use this method, call it with a valid card code string. Ensure that the card code corresponds to an image resource available in the specified location.",
+            "howItWorks": "The method first checks a cache (aCards) for the requested card image. If the image is not found, it constructs the resource path using the card code, loads the image from the class loader, and stores it in the cache for future access. Finally, it returns the retrieved image.",
+            "assertions": {
+              "preConditions": [
+                "The pCode must be a valid string that corresponds to a card image."
+              ],
+              "postConditions": [
+                "The method returns a non-null Image object if the image is successfully loaded."
+              ]
+            },
+            "layer": "Data Source Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.cards.CardImages.getCode(ca.mcgill.cs.stg.solitaire.cards.Card)": {
+            "description": "The method generates a string code representing the rank and suit of a given card.",
+            "reason": "The method is provided to create a unique identifier for each card based on its rank and suit, facilitating easier management and display of card images.",
+            "howToUse": "To use this method, you need to have an instance of the Card class. Call getCode with the Card instance to retrieve its corresponding string code.",
+            "howItWorks": "The method accesses two static arrays, RANK_CODES and SUIT_CODES, which store string representations of card ranks and suits. It retrieves the ordinal values of the card's rank and suit using the getRank() and getSuit() methods. These ordinal values are then used to index into the respective arrays to concatenate the rank and suit codes into a single string.",
+            "assertions": {
+              "preConditions": [
+                "pCard must not be null.",
+                "pCard must be a valid instance of the Card class."
+              ],
+              "postConditions": [
+                "The returned string code accurately represents the rank and suit of the provided card."
+              ]
+            },
+            "layer": "Domain Layer"
+          }
+        }
+      },
+      "ca.mcgill.cs.stg.solitaire.gui.SuitStack": {
+        "description": "This class is responsible for managing the visual representation and user interactions of a stack of cards in the Solitaire game.",
+        "roleStereotype": "User Interfacer",
+        "layer": "Presentation Layer",
+        "class_members": {
+          "ca.mcgill.cs.stg.solitaire.gui.SuitStack.ca.mcgill.cs.stg.solitaire.gui.SuitStack(ca.mcgill.cs.stg.solitaire.model.FoundationPile)": {
+            "description": "The method initializes a SuitStack object that represents a stack of cards in the Solitaire game, setting up its visual properties and drag-and-drop functionality.",
+            "reason": "This method is provided to create a visual representation of a card stack in the Solitaire game, enabling user interaction through drag-and-drop functionality.",
+            "howToUse": "To use this method, instantiate a SuitStack object by passing a FoundationPile instance to the constructor. The SuitStack will then be ready to be added to a JavaFX scene for user interaction.",
+            "howItWorks": "The method sets padding and style for the SuitStack, creates an ImageView for the card back, and initializes drag-and-drop handlers for the image. It also registers the SuitStack as a listener to the GameModel to respond to game state changes. The image is initially set to be invisible until a card is dragged over the stack.",
+            "assertions": {
+              "preConditions": [
+                "A valid FoundationPile instance must be provided."
+              ],
+              "postConditions": [
+                "A SuitStack instance is created with the specified FoundationPile and is ready for user interaction."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.SuitStack.createOnDragDroppedHandler()": {
+            "description": "The method creates an event handler for handling drag-and-drop events for card movements in the Solitaire game.",
+            "reason": "This method is provided to facilitate the drag-and-drop functionality for moving cards within the Solitaire game interface.",
+            "howToUse": "To use this method, it should be assigned as the onDragDropped event handler for a UI component representing a stack of cards. The component will then respond to drag-and-drop actions by executing the defined behavior.",
+            "howItWorks": "The method returns an anonymous inner class implementing the EventHandler interface. When a drag event occurs, it checks if the dragboard contains a string representation of a card. If so, it retrieves the card information, performs the move operation on the game model, and sets the drop completion status based on the success of the operation.",
+            "assertions": {
+              "preConditions": [
+                "The drag event must contain a valid string representation of a card."
+              ],
+              "postConditions": [
+                "The card is moved to the appropriate stack if the drag event is successful."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.SuitStack.createOnDragEnteredHandler()": {
+            "description": "The method creates an event handler that changes the style of a SuitStack when a drag event enters it, provided the drag operation is legal.",
+            "reason": "This method is provided to enhance the user experience by visually indicating valid drag-and-drop operations in the Solitaire game.",
+            "howToUse": "To use this method, it should be called to set up a drag event handler for a SuitStack UI component. The returned handler can then be registered with the SuitStack to respond to drag events.",
+            "howItWorks": "The method defines an anonymous inner class that implements the EventHandler interface for DragEvent. When a drag event occurs, it checks if the dragged card is a legal move for the SuitStack. If the move is legal, it changes the SuitStack's style to indicate that it can accept the card. Finally, it consumes the event to prevent further processing.",
+            "assertions": {
+              "preConditions": [
+                "The drag event must contain a valid dragboard with a string representation of the card.",
+                "The SuitStack must be initialized and ready to accept drag events."
+              ],
+              "postConditions": [
+                "If the move is legal, the SuitStack's style is updated to indicate a valid drop target."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.SuitStack.createOnDragExitedHandler()": {
+            "description": "The method creates an event handler that resets the style of the SuitStack when a drag event exits the component.",
+            "reason": "This method is provided to define the visual feedback for drag-and-drop interactions in the user interface.",
+            "howToUse": "To use this method, it should be assigned to a component's drag exit event listener. This can be done by calling the method and setting the returned handler to the component's setOnDragExited method.",
+            "howItWorks": "The method returns an anonymous inner class that implements the EventHandler interface. When a drag event exits the SuitStack, the handle method is invoked, which sets the style of the SuitStack to a normal border style. It also consumes the event to prevent further processing.",
+            "assertions": {
+              "preConditions": [],
+              "postConditions": [
+                "The style of the SuitStack is set to normal after a drag event exits."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.SuitStack.createOnDragOverHandler(javafx.scene.image.ImageView)": {
+            "description": "The method creates an event handler for drag-over events on a specified ImageView, determining if a card can be legally moved to the target stack.",
+            "reason": "The method is provided to facilitate drag-and-drop functionality for card movements in the Solitaire game interface.",
+            "howToUse": "To use this method, call it with an ImageView representing a stack in the Solitaire game. The returned event handler should be set to the ImageView's onDragOver property to handle drag events appropriately.",
+            "howItWorks": "The method defines an anonymous inner class that implements the EventHandler interface for DragEvent. It checks if the drag source is not the same as the target view and if the dragboard contains a string. If the conditions are met and the move is legal, it accepts the transfer mode as MOVE. Finally, it consumes the event to prevent further processing.",
+            "assertions": {
+              "preConditions": [
+                "The pView parameter must not be null.",
+                "The drag event must have a valid dragboard."
+              ],
+              "postConditions": [
+                "If the move is legal, the drag event is accepted for transfer.",
+                "The event is consumed to prevent further handling."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.SuitStack.gameStateChanged()": {
+            "description": "The method updates the visibility and image of a card in the suit stack based on the state of the foundation pile in the Solitaire game.",
+            "reason": "The method is provided to ensure that the user interface reflects the current state of the game, specifically the visibility and representation of the top card in the suit stack.",
+            "howToUse": "This method is typically called whenever the game state changes, such as when a card is moved or a new card is drawn. It is part of the GUI component that represents the suit stack in the Solitaire game. Ensure that the method is invoked in response to relevant game events to keep the UI in sync with the game state.",
+            "howItWorks": "The method first checks if the foundation pile at the specified index is empty. If it is empty, the top card's visibility is set to false. If not, it sets the visibility to true, retrieves the top card from the suit stack, updates the image displayed for that card, and sets the card for the drag handler to enable dragging functionality.",
+            "assertions": {
+              "preConditions": [
+                "The game model instance must be initialized.",
+                "The index 'aIndex' must be valid and correspond to an existing suit stack."
+              ],
+              "postConditions": [
+                "The visibility of the top card in the suit stack is updated based on the foundation pile state.",
+                "The image of the top card is set correctly if the foundation pile is not empty."
+              ]
+            },
+            "layer": "Presentation Layer"
+          }
+        }
+      },
+      "ca.mcgill.cs.stg.solitaire.gui.DeckView": {
+        "description": "This class is responsible for providing a visual representation of the card deck in the Solitaire game and handling user interactions related to it.",
+        "roleStereotype": "User Interfacer",
+        "layer": "Presentation Layer",
+        "class_members": {
+          "ca.mcgill.cs.stg.solitaire.gui.DeckView.ca.mcgill.cs.stg.solitaire.gui.DeckView()": {
+            "description": "The method initializes a DeckView instance with a button that interacts with the game model to manage the deck of cards in the Solitaire game.",
+            "reason": "This method is provided to create a visual representation of the deck and handle user interactions related to it.",
+            "howToUse": "To use this method, instantiate the DeckView class in your JavaFX application. The DeckView will automatically set up a button that responds to mouse events for managing the card deck.",
+            "howItWorks": "The method creates a button with a card back image and sets its style. It defines mouse event handlers to change the button's style on press and release, and to perform actions based on the state of the game model when released. If the deck is empty, it resets the game; otherwise, it performs a discard move. Finally, it adds itself as a listener to the game model.",
+            "assertions": {
+              "preConditions": [],
+              "postConditions": [
+                "A DeckView instance is created with a button that responds to user interactions."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.DeckView.createNewGameImage()": {
+            "description": "The method creates a new game image on a canvas, displaying a message based on the game's completion status.",
+            "reason": "This method is provided to visually represent the state of the game and prompt the user with relevant messages.",
+            "howToUse": "To use this method, it should be called when initializing a new game or when the game state changes. The returned canvas can then be added to a scene or layout for display.",
+            "howItWorks": "The method first retrieves the dimensions of the card back image to set the canvas size. It then draws an oval and a text message indicating whether the player has won or given up. The graphics context is used to set styles and alignments for the drawn elements.",
+            "assertions": {
+              "preConditions": [],
+              "postConditions": [
+                "A canvas is created and returned with the appropriate game state visual representation."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.DeckView.gameStateChanged()": {
+            "description": "The method updates the graphical representation of the deck based on whether the deck is empty or not.",
+            "reason": "The method is designed to visually reflect the current state of the game by updating the deck's display.",
+            "howToUse": "This method is typically called in response to changes in the game state, such as when the deck is modified. It should be invoked whenever the game state changes to ensure the UI is up-to-date.",
+            "howItWorks": "The method first checks if the deck is empty by calling a method on the GameModel instance. If the deck is empty, it sets the graphic of the first child node (assumed to be a button) to a new game image. If the deck is not empty, it sets the graphic to the back of a card image. This effectively updates the UI to reflect the current state of the deck.",
+            "assertions": {
+              "preConditions": [
+                "The DeckView instance is properly initialized.",
+                "The GameModel instance is accessible and correctly represents the game state."
+              ],
+              "postConditions": [
+                "The UI representation of the deck is updated to reflect whether it is empty or not."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.DeckView.reset()": {
+            "description": "The method resets the visibility of the first child node in the DeckView to visible.",
+            "reason": "The method is provided to allow the user interface to reset the visibility of the deck's first card, which is essential for restarting or refreshing the game state.",
+            "howToUse": "To use the reset method, simply call it on an instance of DeckView when you want to make the first card visible again. This is typically done when resetting the game or refreshing the display after a certain action.",
+            "howItWorks": "The method accesses the children of the DeckView node, specifically the first child, and sets its visibility to true. This is done by calling the setVisible method on the first child node. The method assumes that there is at least one child node present in the DeckView. It effectively makes the first card in the deck visible to the user.",
+            "assertions": {
+              "preConditions": [
+                "The DeckView must have at least one child node."
+              ],
+              "postConditions": [
+                "The first child node of the DeckView is set to visible."
+              ]
+            },
+            "layer": "Presentation Layer"
+          }
+        }
+      }
+    }
+  },
+  "feature_2": {
+    "feature_name": "discardPileAndCardDrag",
+    "feature_description": "This feature is responsible for managing the visual representation and user interactions of the discard pile and card dragging functionality in the Solitaire game. It enables players to interact with the cards through drag-and-drop actions, enhancing the overall gameplay experience.",
+    "feature_members": {
+      "ca.mcgill.cs.stg.solitaire.gui.DiscardPileView": {
+        "description": "This class is responsible for visually representing and managing the discard pile in the Solitaire game, including handling user interactions related to card dragging.",
+        "roleStereotype": "User Interfacer",
+        "layer": "Presentation Layer",
+        "class_members": {
+          "ca.mcgill.cs.stg.solitaire.gui.DiscardPileView.ca.mcgill.cs.stg.solitaire.gui.DiscardPileView()": {
+            "description": "The method initializes a DiscardPileView instance for the Solitaire game, setting up its visual representation and drag-and-drop functionality.",
+            "reason": "This method is provided to create and configure the visual component that represents the discard pile in the Solitaire game.",
+            "howToUse": "To use this method, instantiate the DiscardPileView class within the JavaFX application. The view will automatically set up its padding, image, and drag-and-drop behavior.",
+            "howItWorks": "The method sets padding for the DiscardPileView using predefined constants. It creates an ImageView to display the back of a card, initially setting it to invisible. A drag handler is assigned to the image for handling drag events, and the view registers itself as a listener to the game model to respond to game state changes.",
+            "assertions": {
+              "preConditions": [],
+              "postConditions": [
+                "A DiscardPileView instance is created with a configured ImageView and drag handler."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.DiscardPileView.gameStateChanged()": {
+            "description": "The method updates the visibility and image of the top card in the discard pile based on its state in the game model.",
+            "reason": "The method is provided to ensure that the user interface accurately reflects the current state of the discard pile in the game.",
+            "howToUse": "This method is typically called whenever there is a change in the game state that affects the discard pile. It should be invoked by the game controller or model whenever the discard pile is modified. The UI component must be properly initialized and linked to the game model for this method to function correctly.",
+            "howItWorks": "The method first checks if the discard pile is empty using the game model. If it is empty, it hides the top card's image view. If not, it makes the image view visible, retrieves the top card from the discard pile, updates the image view with the corresponding card image, and sets the drag handler to the top card.",
+            "assertions": {
+              "preConditions": [
+                "The game model instance must be initialized.",
+                "The discard pile view must contain at least one child node."
+              ],
+              "postConditions": [
+                "The visibility of the top card image view is updated based on the discard pile state.",
+                "The image view displays the correct card image if the discard pile is not empty."
+              ]
+            },
+            "layer": "Presentation Layer"
+          }
+        }
+      },
+      "ca.mcgill.cs.stg.solitaire.gui.CardDragHandler": {
+        "description": "This class is responsible for managing the drag-and-drop functionality of card elements in the Solitaire game interface.",
+        "roleStereotype": "User Interfacer",
+        "layer": "Presentation Layer",
+        "class_members": {
+          "ca.mcgill.cs.stg.solitaire.gui.CardDragHandler.ca.mcgill.cs.stg.solitaire.gui.CardDragHandler(javafx.scene.image.ImageView)": {
+            "description": "This constructor initializes a CardDragHandler instance with a specified ImageView for handling card drag events in the Solitaire game.",
+            "reason": "The method is provided to encapsulate the initialization of the card drag handling functionality associated with a specific ImageView.",
+            "howToUse": "To use this constructor, create an instance of ImageView representing the card. Then, instantiate CardDragHandler by passing the ImageView instance to the constructor.",
+            "howItWorks": "The constructor takes an ImageView as a parameter and assigns it to the instance variable aImageView. This allows the CardDragHandler to manipulate the ImageView for drag-and-drop operations. The method does not perform any additional logic or operations beyond the assignment.",
+            "assertions": {
+              "preConditions": [
+                "The provided ImageView must not be null."
+              ],
+              "postConditions": [
+                "The instance variable aImageView is initialized with the provided ImageView."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.CardDragHandler.handle(javafx.scene.input.MouseEvent)": {
+            "description": "The method initiates a drag-and-drop operation for a card in the Solitaire game, allowing the card to be moved by the user.",
+            "reason": "The method is provided to enable user interaction with the card elements through drag-and-drop functionality.",
+            "howToUse": "To use this method, it should be registered as an event handler for mouse events on a card UI element. When the user clicks and drags the card, this method will be invoked to start the drag operation.",
+            "howItWorks": "The method begins by calling startDragAndDrop on the ImageView associated with the card, allowing it to accept drag-and-drop operations. It then sets the content of the dragboard to include the card's ID string, which identifies the card being dragged. Finally, it consumes the mouse event to prevent further processing of the event by other handlers.",
+            "assertions": {
+              "preConditions": [
+                "The aImageView and aCard objects must be properly initialized.",
+                "The mouse event must be triggered by a valid user action."
+              ],
+              "postConditions": [
+                "A drag-and-drop operation is initiated for the card.",
+                "The dragboard contains the card's ID string for identification during the drop operation."
+              ]
+            },
+            "layer": "Presentation Layer"
+          },
+          "ca.mcgill.cs.stg.solitaire.gui.CardDragHandler.setCard(ca.mcgill.cs.stg.solitaire.cards.Card)": {
+            "description": "The method sets the card instance variable to the provided Card object.",
+            "reason": "The method is provided to allow the assignment of a Card object to the CardDragHandler, facilitating card manipulation in the UI.",
+            "howToUse": "To use this method, create an instance of CardDragHandler and call setCard with a Card object. This will associate the specified card with the drag handler for further operations.",
+            "howItWorks": "The method takes a Card object as a parameter and assigns it to the instance variable aCard. This allows the CardDragHandler to keep track of the card being dragged. The method does not perform any validation or additional logic; it simply updates the reference to the Card object.",
+            "assertions": {
+              "preConditions": [],
+              "postConditions": [
+                "aCard is set to the provided Card object."
+              ]
+            },
+            "layer": "Presentation Layer"
+          }
+        }
+      }
+    }
+  }
+}

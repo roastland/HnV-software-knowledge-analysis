@@ -113,11 +113,14 @@ def elements_preparation(nodes, edges):
     print('Packages count: {}'.format(len(packages)))
     
     for _,_,met_id in methods:
-        nodes[met_id]['properties']['description'] = None
+        if nodes[met_id]['properties'].get('description') is None:
+            nodes[met_id]['properties']['description'] = None
     for _,cls_id in classes:
-        nodes[cls_id]['properties']['description'] = None
+        if nodes[cls_id]['properties'].get('description') is None:
+            nodes[cls_id]['properties']['description'] = None
     for pkg_id in packages:
-        nodes[pkg_id]['properties']['description'] = None
+        if nodes[pkg_id]['properties'].get('description') is None:
+            nodes[pkg_id]['properties']['description'] = None
     
     hierarchy = {
         pkg_id: { 
