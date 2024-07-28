@@ -1,0 +1,11 @@
+{
+  "1": "com.eteks.sweethome3d",
+  "2": "com.eteks.sweethome3d.applet",
+  "3": "com.eteks.sweethome3d.io",
+  "4": "com.eteks.sweethome3d.j3d",
+  "5": "com.eteks.sweethome3d.model",
+  "6": "com.eteks.sweethome3d.plugin",
+  "7": "com.eteks.sweethome3d.swing",
+  "8": "com.eteks.sweethome3d.tools",
+  "9": "com.eteks.sweethome3d.viewcontroller"
+}
