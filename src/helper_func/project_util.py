@@ -1,7 +1,7 @@
 import json
 import configparser
 import re
-from graph_util import *
+from src.helper_func.graph_util import *
 
 def read_json_file(file_path):
     with open(file_path, 'rb') as file:
