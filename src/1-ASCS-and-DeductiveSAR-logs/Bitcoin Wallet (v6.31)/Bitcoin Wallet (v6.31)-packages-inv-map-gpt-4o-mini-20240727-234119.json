@@ -1,0 +1,14 @@
+{
+  "1": "de.schildbach.wallet",
+  "2": "de.schildbach.wallet.data",
+  "3": "de.schildbach.wallet.integration.android",
+  "4": "de.schildbach.wallet.offline",
+  "5": "de.schildbach.wallet.service",
+  "6": "de.schildbach.wallet.ui",
+  "7": "de.schildbach.wallet.ui.backup",
+  "8": "de.schildbach.wallet.ui.monitor",
+  "9": "de.schildbach.wallet.ui.preference",
+  "10": "de.schildbach.wallet.ui.scan",
+  "11": "de.schildbach.wallet.ui.send",
+  "12": "de.schildbach.wallet.util"
+}
